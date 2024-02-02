@@ -1,22 +1,19 @@
-body 
-{
-    background-color: orange;
-}
-  
-h1 
-{
-    color: blue;
-    text-align: center;
+body {
+  background-color: orange;
 }
 
-h2
-{
-    color: green;
-    text-align: center;
+h1 {
+  color: blue;
+  text-align: center;
 }
-  
-p 
-{
-    font-family: verdana;
-    font-size: 20px;
+
+div {
+  color: green;
+  text-align: center;
+  font-size: 30px;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
 }
