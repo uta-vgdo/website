@@ -117,3 +117,7 @@ ul {
 .item:nth-child(4) {
   --bg-color: #7785cc;
 }
+
+.item:nth-child(5) {
+  --bg-color: black;
+}
