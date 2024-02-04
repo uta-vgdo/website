@@ -7,15 +7,25 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+  min-width:100%;
+  position:fixed;
+  top:0;
+  left:0;
 }
 
 .navigationBar li {
   padding-left: 50px;
+  padding-right: 50px;
 }
 
 .navigationBar li a {
   text-decoration: none;
+  text-align: center;
   color: white;
+}
+
+.navigationBar li:hover{
+  background-color: black;
 }
 
 .navigationBar a:visited {
