@@ -1,22 +1,40 @@
+.navigationBar {
+  background-color: #003f7d;
+  color: white;
+  font-size: 50px;
+  justify-content: left;
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigationBar li {
+  padding-left: 50px;
+}
+
+.navigationBar li a {
+  text-decoration: none;
+  color: white;
+}
+
+.navigationBar a:visited {
+  color: inherit;
+}
+
 body {
   background-color: orange;
   text-align: center;
 }
 
 h1 {
-  color: blue;
+  color: white;
   text-align: center;
 }
 
 h4 {
   font-size: 36px;
   justify-content: center;
-}
-
-.headingButtons {
-  color: green;
-  text-align: center;
-  font-size: 30px;
 }
 
 p {
