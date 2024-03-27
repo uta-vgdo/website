@@ -1,16 +1,6 @@
 .navigationBar {
   background-color: #003f7d;
   color: white;
-  font-size: 50px;
-  justify-content: left;
-  text-decoration: none;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  min-width:100%;
-  position:fixed;
-  top:0;
-  left:0;
 }
 
 .navigationBar li {
@@ -24,7 +14,7 @@
   color: white;
 }
 
-.navigationBar li:hover{
+.navigationBar li:hover {
   background-color: black;
 }
 
@@ -83,7 +73,6 @@ ul {
   z-index: 0;
   scale: 1 0;
   transform-origin: bottom;
-  transition: scale 0.5s ease;
 }
 
 .item:hover a::before {
@@ -93,13 +82,11 @@ ul {
 .icon {
   font-size: 2rem;
   color: hsl(203, 92%, 8%);
-  transition: 0.5s ease;
   z-index: 2;
 }
 
 .item a:hover .icon {
   color: #fff;
-  transform: rotateY(360deg);
 }
 
 .item:nth-child(1) {
@@ -111,7 +98,7 @@ ul {
 }
 
 .item:nth-child(3) {
-  --bg-color:#1DA1F2;
+  --bg-color: #1da1f2;
 }
 
 .item:nth-child(4) {
