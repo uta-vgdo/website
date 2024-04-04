@@ -87,7 +87,7 @@ header .navigationBar li a:hover {
 */
 
 body {
-  background-color: orange;
+  background-color: var(--red);
   text-align: center;
 }
 
@@ -115,8 +115,8 @@ ul {
 
 .item a {
   text-decoration: none;
-  width: 4.8rem;
-  height: 4.8rem;
+  width: 2.4rem;
+  height: 2.4rem;
   background-color: #f0f9fe;
   border-radius: 50%;
   display: flex;
@@ -144,7 +144,7 @@ ul {
 }
 
 .icon {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: hsl(203, 92%, 8%);
   z-index: 2;
 }
@@ -173,12 +173,18 @@ ul {
   --bg-color: black;
 }
 
+p {
+  margin-top: 1rem;
+  font-size: 14px;
+}
+
 footer {
   position: relative;
+  //bottom: 0;
   width: 100%;
-  background: var(--dark);
+  background: var(--black);
   min-height: 100px;
-  color: var(--light);
+  color: var(--white);
   padding: 20px 50px;
   font-size: 13px;
   line-height: 20px;
@@ -187,48 +193,4 @@ footer {
   align-items: center;
   flex-direction: column;
   margin-top: 2%;
-}
-footer .icon,
-footer .menu {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10px 0;
-  flex-wrap: wrap;
-}
-footer .icon li,
-footer .menu li {
-  list-style: none;
-}
-footer .icon li a,
-footer .menu li a {
-  font-size: 2em;
-  color: var(--light);
-  margin: 0 10px;
-  display: inline-block;
-  transition: 0.2s;
-}
-footer .icon li a:hover {
-  transform: translateY(-10px);
-}
-footer .menu li a {
-  font-size: 1.2em;
-  color: var(--light);
-  margin: 0 10px;
-  display: inline-block;
-  text-decoration: none;
-  opacity: 0.75;
-}
-footer .menu li a:hover {
-  opacity: 1;
-  transform: scale(1.1, 1.1);
-}
-footer p {
-  color: var(--light);
-  text-align: center;
-  margin-top: 15px;
-  margin-bottom: 10px;
-  font-size: 1.1em;
-  opacity: 0.50;
 }
