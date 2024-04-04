@@ -1,3 +1,66 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    box-sizing: border-box;
+}
+
+:root {
+    --white: #FFFEF1;
+    --yellow: #FFB650;
+    --orange: #FF9C51;
+    --red: #EF6848;
+    --black: #161F28;
+}
+
+header {
+  position: relative;
+  width: 100%;
+  background: var(--black);
+  height: 2em;
+  color: var(--white);
+  padding: 1.25rem 3.125rem;
+  font-size: 13px;
+  line-height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  //margin-top: -2%;
+  margin-bottom: 5%;
+}
+header .navigationBar {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+header .navigationBar li {
+  list-style: none;
+}
+header .navigationBar li a {
+  font-size: 2em;
+  color:var(--dark);
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.2s;
+}
+header .navigationBar li a {
+  font-size: 1.2em;
+  color:var(--dark);
+  margin: 0 10px;
+  display: inline-block;
+  text-decoration: none;
+  opacity: 0.75;
+}
+header .navigationBar li a:hover {
+  opacity: 1;
+  transform: scale(1.1, 1.1);
+}
+/*
 .navigationBar {
   background-color: #003f7d;
   color: white;
@@ -21,6 +84,7 @@
 .navigationBar a:visited {
   color: inherit;
 }
+*/
 
 body {
   background-color: orange;
@@ -107,4 +171,64 @@ ul {
 
 .item:nth-child(5) {
   --bg-color: black;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  background: var(--dark);
+  min-height: 100px;
+  color: var(--light);
+  padding: 20px 50px;
+  font-size: 13px;
+  line-height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2%;
+}
+footer .icon,
+footer .menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+footer .icon li,
+footer .menu li {
+  list-style: none;
+}
+footer .icon li a,
+footer .menu li a {
+  font-size: 2em;
+  color: var(--light);
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.2s;
+}
+footer .icon li a:hover {
+  transform: translateY(-10px);
+}
+footer .menu li a {
+  font-size: 1.2em;
+  color: var(--light);
+  margin: 0 10px;
+  display: inline-block;
+  text-decoration: none;
+  opacity: 0.75;
+}
+footer .menu li a:hover {
+  opacity: 1;
+  transform: scale(1.1, 1.1);
+}
+footer p {
+  color: var(--light);
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+  opacity: 0.50;
 }
