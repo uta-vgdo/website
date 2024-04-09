@@ -30,8 +30,9 @@ header {
   //margin-top: -2%;
   margin-bottom: 5%;
 }
+
 header .navigationBar {
-  position: relative;
+  position: sticky;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,6 +61,10 @@ header .navigationBar li a:hover {
   opacity: 1;
   transform: scale(1.1, 1.1);
 }
+header .navigationBar li a.active {
+  color: var(--red);
+}
+
 /*
 .navigationBar {
   background-color: #003f7d;
