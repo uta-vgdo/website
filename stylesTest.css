@@ -26,12 +26,16 @@ a {
 }
 
 .nav-menu {
+  position: absolute; /* Change position to absolute */
+  left: 50%; /* Set left position to center horizontally */
+  transform: translateX(-50%); /* Adjust horizontally to center */
   display: flex;
-  position: relative;
-  left: -350px;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center; /* Center the items horizontally */
+  align-items: center; /* Center the items vertically */
   gap: 60px;
+  background-color: #262626;
+  text-align: center;
+  transition: 0.3s;
 }
 
 .nav-branding {
