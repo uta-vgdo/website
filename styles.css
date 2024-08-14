@@ -14,6 +14,7 @@
     --black: #161F28;
 }
 
+/*
 .container {
   width: 100%;
   height: 100%;
@@ -26,7 +27,7 @@
   width: 100%;
   height: 100%; //adjust accordingly so animation is no cut off
   overflow: hidden;
-  font-size: 2.5em; /*leaf icon*/
+  font-size: 2.5em; //leaf icon
 }
 @keyframes animateBubbles {
   100% {
@@ -207,13 +208,14 @@
   animation-duration: 6s;
   color: maroon;
 }
-
+*/
 
 header {
-  position: relative;
+  position: fixed;
+  top: 0;
   width: 100%;
   background: var(--black);
-  height: 2em;
+  height: 4rem;
   color: var(--white);
   padding: 1.25rem 3.125rem;
   font-size: 13px;
@@ -222,8 +224,7 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  //margin-top: -2%;
-  margin-bottom: 5%;
+  z-index: 1000; /* Ensures the header stays above other content */
 }
 
 header .navigationBar {
@@ -289,6 +290,9 @@ header .navigationBar li a.active {
 body {
   background-color: var(--red);
   text-align: center;
+  height: 100%;
+  padding-top: 5rem;
+  margin: 0;
 }
 
 h1 {
@@ -396,8 +400,7 @@ p {
 }
 
 footer {
-  position: relative;
-  //bottom: 0;
+  position: relative; /* or 'static' depending on your layout needs */
   width: 100%;
   background: var(--black);
   min-height: 100px;
@@ -409,5 +412,5 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 2%;
+  margin-top: auto;
 }
