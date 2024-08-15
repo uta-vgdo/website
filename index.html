@@ -36,7 +36,20 @@
         <div>
           <h4>VGDO Community's Games</h4>
           <br>
-          <img src="Assets/redpanda.jpeg" alt="Red Panda">
+          <div class="video-section">
+            <button id="prevBtn" class="arrow-btn">
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <div class="video-container">
+              <video id="gameVideo" width="640" height="360" controls autoplay muted>
+                <source src="Assets/Rollability.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <button id="nextBtn" class="arrow-btn">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
           <br>
           <br>
           <br>
@@ -132,9 +145,60 @@
             </a>
           </li>
         </ul>
-        <p>gdc.uta@gmail.com</p>
+        <p>vgdo.uta@gmail.com</p>
         <p>@Copyright 2024 | Made by Video Game Developer's Organization Officers at UTA</p>
       </footer>
     </div>
+
+    <script>
+      // Array of video file paths
+      const videos = [
+        'Assets/Rollability.mp4',
+        'Assets/Flatline.mp4',
+        'Assets/ItsNotMeItsYou.mp4',
+        'Assets/BloodBlaster.mp4',
+        'Assets/HeartMonitor.mp4'
+      ];
+    
+      // Index to keep track of the current video being played
+      let currentVideoIndex = 0;
+    
+      // Reference to the video element in the HTML
+      const videoElement = document.getElementById('gameVideo');
+    
+      // Reference to the next and previous buttons
+      const nextBtn = document.getElementById('nextBtn');
+      const prevBtn = document.getElementById('prevBtn');
+    
+      // Event listener for the "Next" button
+      nextBtn.addEventListener('click', () => {
+        // Increment the current video index, looping back to the start if necessary
+        currentVideoIndex = (currentVideoIndex + 1) % videos.length;
+        // Update the video source to the next video
+        videoElement.src = videos[currentVideoIndex];
+        // Start playing the new video
+        videoElement.play();
+      });
+    
+      // Event listener for the "Previous" button
+      prevBtn.addEventListener('click', () => {
+        // Decrement the current video index, looping back to the end if necessary
+        currentVideoIndex = (currentVideoIndex - 1 + videos.length) % videos.length;
+        // Update the video source to the previous video
+        videoElement.src = videos[currentVideoIndex];
+        // Start playing the new video
+        videoElement.play();
+      });
+    
+      // Event listener for when the video ends
+      videoElement.addEventListener('ended', () => {
+        // Increment the current video index to go to the next video
+        currentVideoIndex = (currentVideoIndex + 1) % videos.length;
+        // Update the video source to the next video
+        videoElement.src = videos[currentVideoIndex];
+        // Start playing the new video automatically
+        videoElement.play();
+      });
+    </script>
   </body>
 </html>

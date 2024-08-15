@@ -125,7 +125,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%; //adjust accordingly so animation is no cut off
+  height: 100%; /*adjust accordingly so animation is no cut off*/
   overflow: hidden;
   font-size: 2.5em; /*leaf icon*/
 }
@@ -147,7 +147,7 @@ body {
   width: 20px;
   height: 20px;
   opacity: 0;
-  //background: var(--white);
+  background: var(--white);
   bottom: -150px;
   animation: animateBubbles 5s linear infinite;
 }
