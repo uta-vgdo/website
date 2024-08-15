@@ -423,9 +423,13 @@ p {
 }
 
 .video-container {
-  width: 640px;
-  height: 360px;
+  width: 650px; /* Video width */
+  height: 370px; /* Video height */
   position: relative;
+  border: 5px solid var(--red); /* Add border directly to the container */
+  border-radius: 5px; /* Rounded corners */
+  box-sizing: border-box; /* Ensure border is included in the container's width/height */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional: Add shadow for effect */
 }
 
 .arrow-btn {
