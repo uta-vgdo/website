@@ -7,28 +7,28 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
+  <body>
     <div class="NavBar">
       <header>
-        <div class = "logo">
+        <div class="logo">
           VGDO
         </div>
         <ul class="navigationBar">
             <!-- Add when these pages are done -->
             <!-- <li><a class="active" href="index.html">Home</a></li>
-            <li><a href="about.html">About</ion-icon></a></li>
-            <li><a href="events.html">Events</ion-icon></a></li>
-            <li><a href="jams.html">Jams</ion-icon></a></li> -->
+            <li><a href="about.html">About</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="jams.html">Jams</a></li> -->
 
-            <!-- <li><a href="contact.html">Contact</ion-icon></a></li> -->
+            <!-- <li><a href="contact.html">Contact</a></li> -->
         </ul>
-        <div class = "logo2">
+        <div class="logo2">
           VGDO
         </div>
       </header>
     </div>
     <div class="Home">
       <h1>Video Game Developer's Organization at UTA</h1>
-      <body>
         <div>
           <h4>Welcome to the VGDO!</h4>
           <br>
@@ -63,12 +63,17 @@
               </a>
             </li>
           </ul>
-          <br>
-          <br>
-          <br>
+          <br><br><br><br>
         </div>
         <div>
           <h4>VGDO Community's Games</h4>
+          <br>
+          <br>
+          <h3 id="videoTitle">Red Panda Bash</h3> <!-- Title element -->
+          <!-- Play button -->
+          <div class="play-button-container">
+            <a id="playButton" href="https://cents808.itch.io/red-panda-bash" target="_blank" class="play-button">Play</a>
+          </div>
           <br>
           <div class="video-section">
             <button id="prevBtn" class="arrow-btn">
@@ -76,7 +81,7 @@
             </button>
             <div class="video-container">
               <video id="gameVideo" width="640" height="360" controls autoplay muted>
-                <source src="Assets/Rollability.mp4" type="video/mp4" />
+                <source src="Assets/RedPandaBash.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </div>
@@ -84,18 +89,14 @@
               <i class="fa-solid fa-arrow-right"></i>
             </button>
           </div>
-          <br>
-          <br>
-          <br>
+          <br><br><br><br>
         </div>
         <div>
           <h4>About VGDO</h4>
           <br>
           <h3>Our Mission Statement:</h3>
-        <h5>"To create an environment to give an opportunity for amateur game developers to be tutored by and eventually become veteran/professional designers, and to enable anyone interested in the hobby/career (regardless of skill level) to grow their knowledge base and capabilities."</h5>
-          <br>
-          <br>
-          <br>
+          <h5>"To create an environment to give an opportunity for amateur game developers to be tutored by and eventually become veteran/professional designers, and to enable anyone interested in the hobby/career (regardless of skill level) to grow their knowledge base and capabilities."</h5>
+          <br><br><br><br>
         </div>
         <div>
           <h4>Events Calendar</h4>
@@ -103,11 +104,9 @@
           <div class="calendar">
             <iframe src="https://calendar.google.com/calendar/embed?height=610&wkst=1&ctz=America%2FChicago&bgcolor=%23ef6848&showPrint=0&showTabs=0&showCalendars=0&src=ZWVhYTc3MmMyZmVjY2QwMTYwNWRhMGIyNDhmNGZkZjI4OTNiMTRmMThiOTRhNDBiMzVkODVjOTQxYTg3MzY4MEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23F6BF26" style="border-width:0" width="1120" height="610" frameborder="0" scrolling="no"></iframe>
           </div>
-          <br>
-          <br>
-          <br>
+          <br><br><br>
         </div>
-      </body>
+      </div>
     </div>
     
     <div class="container">
@@ -170,53 +169,55 @@
     </div>
 
     <script>
-      // Array of video file paths
+      // Array of video file paths and their titles
       const videos = [
-        'Assets/Rollability.mp4',
-        'Assets/Flatline.mp4',
-        'Assets/ItsNotMeItsYou.mp4',
-        'Assets/HeartMonitor.mp4',
-        'Assets/BloodBlaster.mp4'
+        { src: 'Assets/RedPandaBash.mp4', title: 'Red Panda Bash', link:'https://cents808.itch.io/red-panda-bash' },
+        { src: 'Assets/Flatline.mp4', title: 'Flatline', link:'https://google.com' },
+        { src: 'Assets/ItsNotMeItsYou.mp4', title: 'Its Not Me Its You' },
+        { src: 'Assets/HeartMonitor.mp4', title: 'Heart Monitor' },
+        { src: 'Assets/BloodBlaster.mp4', title: 'Blood Blaster' },
+        { src: 'Assets/Rollability.mp4', title: 'Rollability' }
       ];
     
-      // Index to keep track of the current video being played
+      const videoElement = document.getElementById('gameVideo');
+      const videoTitle = document.getElementById('videoTitle');
+      const playButton = document.getElementById('playButton');
       let currentVideoIndex = 0;
     
-      // Reference to the video element in the HTML
-      const videoElement = document.getElementById('gameVideo');
+      // Function to change video
+      function changeVideo(index) {
+        videoElement.src = videos[index].src;
+        videoTitle.textContent = videos[index].title;
+        playButton.href = videos[index].link || '#';  // Use '#' as a fallback if no link is provided
+        videoElement.play();
+      }
     
-      // Reference to the next and previous buttons
-      const nextBtn = document.getElementById('nextBtn');
-      const prevBtn = document.getElementById('prevBtn');
-    
-      // Event listener for the "Next" button
-      nextBtn.addEventListener('click', () => {
-        // Increment the current video index, looping back to the start if necessary
+      // Function to move to the next video
+      function nextVideo() {
         currentVideoIndex = (currentVideoIndex + 1) % videos.length;
-        // Update the video source to the next video
-        videoElement.src = videos[currentVideoIndex];
-        // Start playing the new video
-        videoElement.play();
-      });
+        changeVideo(currentVideoIndex);
+      }
     
-      // Event listener for the "Previous" button
-      prevBtn.addEventListener('click', () => {
-        // Decrement the current video index, looping back to the end if necessary
+      // Add event listeners for buttons
+      document.getElementById('nextBtn').addEventListener('click', nextVideo);
+    
+      document.getElementById('prevBtn').addEventListener('click', function () {
         currentVideoIndex = (currentVideoIndex - 1 + videos.length) % videos.length;
-        // Update the video source to the previous video
-        videoElement.src = videos[currentVideoIndex];
-        // Start playing the new video
-        videoElement.play();
+        changeVideo(currentVideoIndex);
       });
     
       // Event listener for when the video ends
-      videoElement.addEventListener('ended', () => {
-        // Increment the current video index to go to the next video
-        currentVideoIndex = (currentVideoIndex + 1) % videos.length;
-        // Update the video source to the next video
-        videoElement.src = videos[currentVideoIndex];
-        // Start playing the new video automatically
-        videoElement.play();
+      videoElement.addEventListener('ended', nextVideo);
+    
+      // Event listener for time update to check if 30 seconds have passed
+      videoElement.addEventListener('timeupdate', function () {
+        if (videoElement.currentTime >= 30) {
+          nextVideo();
+        }
       });
+    
+      // Initial video load
+      changeVideo(currentVideoIndex);
     </script>
+  </body>
 </html>

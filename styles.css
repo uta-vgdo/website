@@ -346,7 +346,7 @@ h1 {
 }
 
 h3 {
-  color: var(--red);
+  color: var(--orange);
   font-size: 25px;
   justify-content: center;
 }
@@ -373,6 +373,28 @@ ul {
   list-style: none;
   gap: 2.0rem;
   justify-content: center;
+}
+
+.play-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.play-button {
+  background-color: var(--black);
+  color: var(--orange);
+  border: 2px solid var(--orange);
+  padding: 7px 15px;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.1s ease, color 0.1s ease;
+}
+
+.play-button:hover {
+  background: var(--orange);
+  color: var(--black);
 }
 
 img {
@@ -474,7 +496,7 @@ p {
   width: 800px; /* Set the desired width */
   height: 450px; /* Set the desired height */
   position: relative;
-  border: 5px solid var(--red); /* Add border directly to the container */
+  border: 5px solid var(--orange); /* Add border directly to the container */
   border-radius: 5px; /* Rounded corners */
   box-sizing: border-box; /* Ensure border is included in the container's width/height */
 }
