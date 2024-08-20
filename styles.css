@@ -445,6 +445,11 @@ p {
   outline: none;
 }
 
+.calendar iframe {
+  width: 800px; /* Adjust the width as needed */
+  height: 450px; /* Adjust the height as needed */
+}
+
 footer {
   position: relative; /* or 'static' depending on your layout needs */
   width: 100%;
