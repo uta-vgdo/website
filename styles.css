@@ -272,6 +272,23 @@ header .navigationBar li a.active {
   color: var(--red);
 }
 
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+  header {
+    height: 3rem; /* Adjust height for mobile */
+    padding: 0.75rem 1.5rem; /* Adjust padding for mobile */
+    font-size: 11px; /* Adjust font size for mobile */
+  }
+  
+  header .logo {
+    font-size: 1.2rem; /* Adjust font size for logo on mobile */
+  }
+  
+  header .navigationBar li a {
+    font-size: 1rem; /* Adjust font size for navigation links on mobile */
+  }
+}
+
 /*
 .navigationBar {
   background-color: #003f7d;
@@ -423,13 +440,20 @@ p {
 }
 
 .video-container {
-  width: 650px; /* Video width */
-  height: 370px; /* Video height */
+  width: 800px; /* Set the desired width */
+  height: 450px; /* Set the desired height */
   position: relative;
   border: 5px solid var(--red); /* Add border directly to the container */
   border-radius: 5px; /* Rounded corners */
   box-sizing: border-box; /* Ensure border is included in the container's width/height */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional: Add shadow for effect */
+}
+
+/* Video styling */
+.video-container video {
+  width: 100%; /* Fill the width of the container */
+  height: 100%; /* Fill the height of the container */
+  object-fit: cover; /* Ensure the video covers the container */
 }
 
 .arrow-btn {
