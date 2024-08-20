@@ -292,13 +292,18 @@ header .navigationBar li a.active {
   }
   
   header .logo {
-    font-size: 2rem; /* Adjust font size for logo on mobile */
+    font-size: 1.2rem; /* Adjust font size for logo on mobile */
   }
-  
+
+  header .navigationBar li {
+    margin: 0 2px; /* Space between items */
+  }
+
   header .navigationBar li a {
-    font-size: 2rem; /* Adjust font size for navigation links on mobile */
+    font-size: 1rem; /* Adjust font size for navigation links on mobile */
   }
 }
+
 
 /*
 .navigationBar {
@@ -332,6 +337,12 @@ body {
   height: 100%;
   padding-top: 5rem;
   margin: 0;
+}
+
+@media (max-width: 768px) {
+  body {
+    background-color: yellow; /* Temporary style for debugging */
+  }
 }
 
 h1 {
@@ -482,6 +493,13 @@ p {
 .calendar iframe {
   width: 800px; /* Adjust the width as needed */
   height: 450px; /* Adjust the height as needed */
+}
+
+@media (max-width: 768px) {
+  .calendar iframe {
+    width: 400px; /* Adjust the width as needed */
+    height: 250px; /* Adjust the height as needed */
+  }
 }
 
 footer {
