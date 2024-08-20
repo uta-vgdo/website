@@ -29,6 +29,17 @@
   overflow: hidden;
   font-size: 2.5em; /*leaf icon*/
 }
+/* Mobile-specific styles for the bubbles */
+@media (max-width: 768px) {
+  .bubbles {
+    height: 100%; /* Make sure the bubbles container height is 100% */
+    overflow: hidden; /* Hide any overflowing bubbles */
+  }
+
+  .bubbles div {
+    bottom: 0; /* Adjust this to control initial positioning for mobile */
+  }
+}
 @keyframes animateBubbles {
   100% {
       opacity: 0;
@@ -275,17 +286,17 @@ header .navigationBar li a.active {
 /* Mobile-specific styles */
 @media (max-width: 768px) {
   header {
-    height: 3rem; /* Adjust height for mobile */
+    height: 4rem; /* Adjust height for mobile */
     padding: 0.75rem 1.5rem; /* Adjust padding for mobile */
     font-size: 11px; /* Adjust font size for mobile */
   }
   
   header .logo {
-    font-size: 1.2rem; /* Adjust font size for logo on mobile */
+    font-size: 2rem; /* Adjust font size for logo on mobile */
   }
   
   header .navigationBar li a {
-    font-size: 1rem; /* Adjust font size for navigation links on mobile */
+    font-size: 2rem; /* Adjust font size for navigation links on mobile */
   }
 }
 
@@ -446,7 +457,6 @@ p {
   border: 5px solid var(--red); /* Add border directly to the container */
   border-radius: 5px; /* Rounded corners */
   box-sizing: border-box; /* Ensure border is included in the container's width/height */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional: Add shadow for effect */
 }
 
 /* Video styling */
