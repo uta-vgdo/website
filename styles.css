@@ -293,7 +293,7 @@ header .navigationBar li a.active {
   
   header .logo {
     font-size: 1.2rem; /* Adjust font size for logo on mobile */
-    opacity: 0%;
+    /*opacity: 0%;  /* Add this when other pages are done */
   }
 
   header .navigationBar li {
@@ -345,6 +345,12 @@ h1 {
   text-align: center;
 }
 
+h3 {
+  color: var(--red);
+  font-size: 25px;
+  justify-content: center;
+}
+
 h4 {
   color: var(--red);
   font-size: 36px;
@@ -353,6 +359,8 @@ h4 {
 
 h5 {
   color: var(--white);
+  font-size: 15px;
+  padding: 1rem;
 }
 
 p {
@@ -363,7 +371,7 @@ p {
 ul {
   display: flex;
   list-style: none;
-  gap: 2.5rem;
+  gap: 2.0rem;
   justify-content: center;
 }
 
@@ -474,7 +482,7 @@ p {
 @media (max-width: 768px) {
   .video-container {
     width: 400px; /* Adjust the width as needed */
-    height: 150px; /* Adjust the height as needed */
+    height: 200px; /* Adjust the height as needed */
   }
 }
 
