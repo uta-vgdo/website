@@ -287,16 +287,17 @@ header .navigationBar li a.active {
 @media (max-width: 768px) {
   header {
     height: 4rem; /* Adjust height for mobile */
-    padding: 0.75rem 1.5rem; /* Adjust padding for mobile */
-    font-size: 11px; /* Adjust font size for mobile */
+    padding: 0.5rem 1rem; /* Adjust padding for mobile */
+    font-size: 10px; /* Adjust font size for mobile */
   }
   
   header .logo {
     font-size: 1.2rem; /* Adjust font size for logo on mobile */
+    opacity: 0%;
   }
 
   header .navigationBar li {
-    margin: 0 2px; /* Space between items */
+    margin: 0 -10px; /* Space between items */
   }
 
   header .navigationBar li a {
@@ -330,10 +331,6 @@ header .navigationBar li a.active {
   color: inherit;
 }
 */
-div {
-  width: 100%;
-  /* You might also want to add some padding or margins */
-}
 
 body {
   background-color: var(--black);
@@ -372,6 +369,7 @@ ul {
 
 img {
   border-radius: 50%;
+  padding: 10px;
 }
 
 .responsive-image {
@@ -473,6 +471,13 @@ p {
   box-sizing: border-box; /* Ensure border is included in the container's width/height */
 }
 
+@media (max-width: 768px) {
+  .video-container {
+    width: 400px; /* Adjust the width as needed */
+    height: 150px; /* Adjust the height as needed */
+  }
+}
+
 /* Video styling */
 .video-container video {
   width: 100%; /* Fill the width of the container */
@@ -501,7 +506,7 @@ p {
 @media (max-width: 768px) {
   .calendar iframe {
     width: 400px; /* Adjust the width as needed */
-    height: 250px; /* Adjust the height as needed */
+    height: 350px; /* Adjust the height as needed */
   }
 }
 
