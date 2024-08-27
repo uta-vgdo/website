@@ -48,11 +48,6 @@
               </a>
             </li>
             <li class="item">
-              <a href="https://twitter.com/GDCUTA">
-                <i class="fa-brands fa-twitter icon"></i>
-              </a>
-            </li>
-            <li class="item">
               <a href="https://discord.gg/k5cgBEStQj">
                   <i class="fa-brands fa-discord fa-2xl icon"></i>
               </a>
@@ -72,7 +67,7 @@
           <h3 id="videoTitle">Red Panda Bash</h3> <!-- Title element -->
           <!-- Play button -->
           <div class="play-button-container">
-            <a id="playButton" href="https://cents808.itch.io/red-panda-bash" target="_blank" class="play-button">Play</a>
+            <a id="playButton" href="https://cents808.itch.io/red-panda-bash" target="_blank" class="play-button"></a>
           </div>
           <br>
           <div class="video-section">
@@ -89,15 +84,29 @@
               <i class="fa-solid fa-arrow-right"></i>
             </button>
           </div>
-          <br><br><br><br>
         </div>
-        <div>
+        <br><br>
+        <div class="about-section">
+          <br><br>
           <h4>About VGDO</h4>
           <br>
-          <h3>Our Mission Statement:</h3>
-          <h5>"To create an environment to give an opportunity for amateur game developers to be tutored by and eventually become veteran/professional designers, and to enable anyone interested in the hobby/career (regardless of skill level) to grow their knowledge base and capabilities."</h5>
-          <br><br><br><br>
+          <h3>Guiding the Next Generation of Game Developers and Designers</h3><br>
+          <div class="about-container">
+            <h5>The Video Game Developers Organization (VGDO) is dedicated to empowering 
+            aspiring game developers and designers by providing the knowledge and tools 
+            necessary to bring their creative visions to life. <br><br>
+            Our club covers a wide range of game development disciplines, including arts 
+            and animations, music and sound production, and coding. <br><br>
+            Through hands-on workshops that explore both 
+            well-established and emerging software, as well as Art, Music, and 
+            Game Jams where members engage in friendly competition to create art, music, and 
+            games, we foster a community of innovation, creativity, and learning. <br><br>
+            Whether you're a beginner or an experienced developer, VGDO is here to support your 
+            journey in the world of game design. </h5>
+          </div>
+          <br><br>
         </div>
+        <br><br>
         <div>
           <h4>Events Calendar</h4>
           <br>
@@ -148,11 +157,6 @@
             </a>
           </li>
           <li class="item">
-            <a href="https://twitter.com/GDCUTA">
-              <i class="fa-brands fa-twitter icon"></i>
-            </a>
-          </li>
-          <li class="item">
             <a href="https://discord.gg/k5cgBEStQj">
                 <i class="fa-brands fa-discord fa-2xl icon"></i>
             </a>
@@ -171,10 +175,10 @@
     <script>
       // Array of video file paths and their titles
       const videos = [
-        { src: 'Assets/RedPandaBash.mp4', title: 'Red Panda Bash', link:'https://cents808.itch.io/red-panda-bash' },
-        { src: 'Assets/Flatline.mp4', title: 'Flatline', link:'https://google.com' },
-        { src: 'Assets/HeartMonitor.mp4', title: 'Heart Monitor', link:'https://oweenyin.itch.io' },
-        { src: 'Assets/BloodBlaster.mp4', title: 'Blood Blaster' },
+        { src: 'Assets/RedPandaBash.mp4', title: 'Red Panda Bash', link: 'https://cents808.itch.io/red-panda-bash', button: 'Visit Developer' },
+        //{ src: 'Assets/Flatline.mp4', title: 'Flatline', link:'https://google.com' },
+        { src: 'Assets/HeartMonitor.mp4', title: 'Heart Monitor', link: 'https://oweenyin.itch.io', button: 'Visit Developer' },
+        { src: 'Assets/BloodBlaster.mp4', title: 'Blood Blaster', button: 'Play' },
       ];
     
       const videoElement = document.getElementById('gameVideo');
@@ -187,6 +191,7 @@
         videoElement.src = videos[index].src;
         videoTitle.textContent = videos[index].title;
         playButton.href = videos[index].link || '#';  // Use '#' as a fallback if no link is provided
+        playButton.textContent = videos[index].button;
         videoElement.play();
       }
     
