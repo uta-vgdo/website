@@ -472,6 +472,41 @@ img {
   scale: 1 1;
 }
 
+/*For MavEngage*/
+.itemME a {
+  text-decoration: none;
+  width: 6rem;
+  height: 2.4rem;
+  background-color: #f0f9fe;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  border: 3px solid #f0f9fe;
+  overflow: hidden;
+}
+
+.itemME a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: var(--bg-color);
+  z-index: 0;
+  scale: 1 0;
+  transform-origin: bottom;
+}
+
+.itemME:hover a::before {
+  scale: 1 1;
+}
+
+.itemME a:hover{
+  background: linear-gradient(to bottom right, #357eec, #ff9101);
+}
+
 .icon {
   font-size: 1.5rem;
   color: hsl(203, 92%, 8%);
@@ -490,11 +525,15 @@ img {
   --bg-color: #ff0000;
 }
 
-.item:nth-child(3) {
-  --bg-color: #7785cc;
+.item:nth-child(2) {
+  --bg-color: #ff0000;
 }
 
 .item:nth-child(4) {
+  --bg-color: #7785cc;
+}
+
+.item:nth-child(5) {
   --bg-color: black;
 }
 
