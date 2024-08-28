@@ -418,6 +418,11 @@ h5 {
   padding: 1rem;
 }
 
+h6 {
+  color: var(--white);
+  font-size: 15px;
+}
+
 p {
   font-family: verdana;
   font-size: 20px;
