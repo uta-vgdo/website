@@ -1,17 +1,16 @@
-*
-{
-    margin: 0;
-    padding: 0;
-    font-family: Arial;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+  box-sizing: border-box;
 }
 
 :root {
-    --white: #FFDEBE;
-    --yellow: #FFDEBE;
-    --orange: #E26454;
-    --red: #B03626;
-    --black: #161F28;
+  --white: #FFDEBE;
+  --yellow: #FFDEBE;
+  --orange: #E26454;
+  --red: #B03626;
+  --black: #161F28;
 }
 
 /*
@@ -25,43 +24,54 @@ FFDEBE
   width: 100%;
   height: 100%;
 }
+
 .bubbles {
   z-index: -100;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%; /*adjust accordingly so animation is no cut off*/
+  height: 100%;
+  /*adjust accordingly so animation is no cut off*/
   overflow: hidden;
-  font-size: 2.5em; /*leaf icon*/
+  font-size: 2.5em;
+  /*leaf icon*/
 }
+
 /* Mobile-specific styles for the bubbles */
 @media (max-width: 768px) {
   .bubbles {
-    height: 100%; /* Make sure the bubbles container height is 100% */
-    overflow: hidden; /* Hide any overflowing bubbles */
+    height: 100%;
+    /* Make sure the bubbles container height is 100% */
+    overflow: hidden;
+    /* Hide any overflowing bubbles */
   }
 
   .bubbles div {
-    bottom: 0; /* Adjust this to control initial positioning for mobile */
+    bottom: 0;
+    /* Adjust this to control initial positioning for mobile */
   }
 }
+
 @keyframes animateBubbles {
   100% {
-      opacity: 0;
-      border-radius: 0;
-      transform: translateY(0) rotate(0deg);
+    opacity: 0;
+    border-radius: 0;
+    transform: translateY(0) rotate(0deg);
   }
-  80% {
+
+  73% {
     opacity: 0;
     border-radius: 0;
   }
+
   0% {
-      opacity: 1;
-      border-radius: 50%;
-      transform: translateY(-1000px) rotate(720deg);
+    opacity: 1;
+    border-radius: 50%;
+    transform: translateY(-1000px) rotate(720deg);
   }
 }
+
 .bubbles div {
   position: absolute;
   display: block;
@@ -72,6 +82,7 @@ FFDEBE
   bottom: -150px;
   animation: animateBubbles 5s linear infinite;
 }
+
 .bubbles div:nth-child(1) {
   left: 25%;
   width: 80px;
@@ -79,6 +90,7 @@ FFDEBE
   animation-delay: 0s;
   color: var(--orange);
 }
+
 .bubbles div:nth-child(2) {
   left: 5%;
   width: 20px;
@@ -87,6 +99,7 @@ FFDEBE
   animation-duration: 12s;
   color: var(--yellow);
 }
+
 .bubbles div:nth-child(3) {
   left: 85%;
   width: 20px;
@@ -95,6 +108,7 @@ FFDEBE
   animation-duration: 13s;
   color: var(--yellow);
 }
+
 .bubbles div:nth-child(4) {
   left: 40%;
   width: 60px;
@@ -103,6 +117,7 @@ FFDEBE
   animation-duration: 18s;
   color: var(--yellow);
 }
+
 .bubbles div:nth-child(5) {
   left: 65%;
   width: 60px;
@@ -111,6 +126,7 @@ FFDEBE
   animation-duration: 13s;
   color: var(--orange);
 }
+
 .bubbles div:nth-child(6) {
   left: 75%;
   width: 110px;
@@ -119,6 +135,7 @@ FFDEBE
   animation-duration: 9s;
   color: var(--yellow);
 }
+
 .bubbles div:nth-child(7) {
   left: 10%;
   width: 100px;
@@ -126,6 +143,7 @@ FFDEBE
   animation-delay: 8s;
   color: var(--orange);
 }
+
 .bubbles div:nth-child(8) {
   left: 50%;
   width: 25px;
@@ -134,6 +152,7 @@ FFDEBE
   animation-duration: 7s;
   color: maroon;
 }
+
 .bubbles div:nth-child(9) {
   left: 20%;
   width: 15px;
@@ -142,6 +161,7 @@ FFDEBE
   animation-duration: 25s;
   color: var(--yellow);
 }
+
 .bubbles div:nth-child(10) {
   left: 90%;
   width: 50px;
@@ -158,6 +178,7 @@ FFDEBE
   animation-delay: 0s;
   color: var(--orange);
 }
+
 .bubbles div:nth-child(12) {
   left: 3.5%;
   width: 20px;
@@ -166,6 +187,7 @@ FFDEBE
   animation-duration: 12s;
   color: maroon;
 }
+
 .bubbles div:nth-child(13) {
   left: 55%;
   width: 20px;
@@ -174,6 +196,7 @@ FFDEBE
   animation-duration: 13s;
   color: var(--yellow);
 }
+
 .bubbles div:nth-child(14) {
   left: 60%;
   width: 60px;
@@ -182,6 +205,7 @@ FFDEBE
   animation-duration: 18s;
   color: var(--orange);
 }
+
 .bubbles div:nth-child(15) {
   left: 35%;
   width: 60px;
@@ -190,6 +214,7 @@ FFDEBE
   animation-duration: 13s;
   color: var(--orange);
 }
+
 .bubbles div:nth-child(16) {
   left: 30%;
   width: 110px;
@@ -198,6 +223,7 @@ FFDEBE
   animation-duration: 9s;
   color: var(--yellow);
 }
+
 .bubbles div:nth-child(17) {
   left: 90%;
   width: 100px;
@@ -205,6 +231,7 @@ FFDEBE
   animation-delay: 18s;
   color: maroon;
 }
+
 .bubbles div:nth-child(18) {
   left: 70%;
   width: 25px;
@@ -213,6 +240,7 @@ FFDEBE
   animation-duration: 7s;
   color: maroon;
 }
+
 .bubbles div:nth-child(19) {
   left: 80%;
   width: 15px;
@@ -221,6 +249,7 @@ FFDEBE
   animation-duration: 25s;
   color: var(--yellow);
 }
+
 .bubbles div:nth-child(20) {
   left: 15%;
   width: 50px;
@@ -245,35 +274,48 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000; /* Ensures the header stays above other content */
+  z-index: 1000;
+  /* Ensures the header stays above other content */
 }
 
 header .logo {
-  margin-right: auto; /* Pushes the logo to the left */
-  font-size: 1.5rem; /* Adjust font size as needed */
-  color: var(--red); /* Adjust color if needed */
+  margin-right: auto;
+  /* Pushes the logo to the left */
+  font-size: 1.5rem;
+  /* Adjust font size as needed */
+  color: var(--red);
+  /* Adjust color if needed */
 }
 
-header .logo2 { /*To ensure content is centered*/
-  margin-left: auto; /* Pushes the logo to the left */
-  font-size: 1.5rem; /* Adjust font size as needed */
-  color: var(--red); /* Adjust color if needed */
+header .logo2 {
+  /*To ensure content is centered*/
+  margin-left: auto;
+  /* Pushes the logo to the left */
+  font-size: 1.5rem;
+  /* Adjust font size as needed */
+  color: var(--red);
+  /* Adjust color if needed */
   opacity: 0%;
 }
 
 header .navigationBar {
   display: flex;
   list-style: none;
-  flex-grow: 1;  /*To ensure content is centered*/
-  margin: 0 auto; /* Centers the navigation bar */
+  flex-grow: 1;
+  /*To ensure content is centered*/
+  margin: 0 auto;
+  /* Centers the navigation bar */
   padding: 0;
 }
+
 header .navigationBar li {
-  margin: 0 10px; /* Space between items */
+  margin: 0 10px;
+  /* Space between items */
 }
+
 header .navigationBar li a {
   font-size: 1.2em;
-  color:var(--white);
+  color: var(--white);
   margin: 0 10px;
   display: inline-block;
   transition: 0.2s;
@@ -285,6 +327,7 @@ header .navigationBar li a:hover {
   opacity: 1;
   transform: scale(1.1);
 }
+
 header .navigationBar li a.active {
   color: var(--red);
 }
@@ -292,22 +335,28 @@ header .navigationBar li a.active {
 /* Mobile-specific styles */
 @media (max-width: 768px) {
   header {
-    height: 4rem; /* Adjust height for mobile */
-    padding: 0.5rem 1rem; /* Adjust padding for mobile */
-    font-size: 10px; /* Adjust font size for mobile */
+    height: 4rem;
+    /* Adjust height for mobile */
+    padding: 0.5rem 1rem;
+    /* Adjust padding for mobile */
+    font-size: 10px;
+    /* Adjust font size for mobile */
   }
-  
+
   header .logo {
-    font-size: 1.2rem; /* Adjust font size for logo on mobile */
+    font-size: 1.2rem;
+    /* Adjust font size for logo on mobile */
     /*opacity: 0%;  /* Add this when other pages are done */
   }
 
   header .navigationBar li {
-    margin: 0 -10px; /* Space between items */
+    margin: 0 -10px;
+    /* Space between items */
   }
 
   header .navigationBar li a {
-    font-size: 1rem; /* Adjust font size for navigation links on mobile */
+    font-size: 1rem;
+    /* Adjust font size for navigation links on mobile */
   }
 }
 
@@ -381,7 +430,20 @@ ul {
   justify-content: center;
 }
 
+.intro {
+  background-color: #0f171f;
+}
+
+.showcase-section {
+  background-color: #0f171f;
+}
+
+/*
 .about-section {
+  background-color: #0f171f;
+}
+*/
+.calendar-section {
   background-color: #0f171f;
 }
 
@@ -390,8 +452,10 @@ ul {
   justify-content: center;
   align-items: center;
   margin: auto;
-  width: auto; /* Set the desired width */
-  height: auto; /* Set the desired height */
+  width: auto;
+  /* Set the desired width */
+  height: auto;
+  /* Set the desired height */
   position: relative;
 }
 
@@ -420,8 +484,10 @@ ul {
 img {
   /*border-radius: 50%; */
   padding: 10px;
-  width: 500px; /* Adjusts the width to 50% of the parent container */
-  height: auto; /* Maintains the aspect ratio */
+  width: 500px;
+  /* Adjusts the width to 50% of the parent container */
+  height: auto;
+  /* Maintains the aspect ratio */
 }
 
 .responsive-image {
@@ -503,7 +569,7 @@ img {
   scale: 1 1;
 }
 
-.itemME a:hover{
+.itemME a:hover {
   background: linear-gradient(to bottom right, #357eec, #ff9101);
 }
 
@@ -550,30 +616,41 @@ p {
 }
 
 .video-container {
-  width: 800px; /* Set the desired width */
-  height: 450px; /* Set the desired height */
+  width: 800px;
+  /* Set the desired width */
+  height: 450px;
+  /* Set the desired height */
   position: relative;
-  border: 5px solid var(--orange); /* Add border directly to the container */
-  border-radius: 5px; /* Rounded corners */
-  box-sizing: border-box; /* Ensure border is included in the container's width/height */
+  border: 5px solid var(--orange);
+  /* Add border directly to the container */
+  border-radius: 5px;
+  /* Rounded corners */
+  box-sizing: border-box;
+  /* Ensure border is included in the container's width/height */
 }
 
 @media (max-width: 768px) {
   .video-container {
-    width: 400px; /* Adjust the width as needed */
-    height: 200px; /* Adjust the height as needed */
+    width: 400px;
+    /* Adjust the width as needed */
+    height: 200px;
+    /* Adjust the height as needed */
   }
 }
 
 /* Video styling */
 .video-container video {
-  width: 100%; /* Fill the width of the container */
-  height: 100%; /* Fill the height of the container */
-  object-fit: cover; /* Ensure the video covers the container */
+  width: 100%;
+  /* Fill the width of the container */
+  height: 100%;
+  /* Fill the height of the container */
+  object-fit: cover;
+  /* Ensure the video covers the container */
 }
 
 .arrow-btn {
-  margin: 0 20px; /* Adjusts space between the video and arrow buttons */
+  margin: 0 20px;
+  /* Adjusts space between the video and arrow buttons */
   background: none;
   border: none;
   color: white;
@@ -586,19 +663,24 @@ p {
 }
 
 .calendar iframe {
-  width: 800px; /* Adjust the width as needed */
-  height: 450px; /* Adjust the height as needed */
+  width: 800px;
+  /* Adjust the width as needed */
+  height: 450px;
+  /* Adjust the height as needed */
 }
 
 @media (max-width: 768px) {
   .calendar iframe {
-    width: 400px; /* Adjust the width as needed */
-    height: 350px; /* Adjust the height as needed */
+    width: 400px;
+    /* Adjust the width as needed */
+    height: 350px;
+    /* Adjust the height as needed */
   }
 }
 
 footer {
-  position: relative; /* or 'static' depending on your layout needs */
+  position: relative;
+  /* or 'static' depending on your layout needs */
   width: 100%;
   background: var(--black);
   border-top: 4px solid var(--red);
