@@ -400,6 +400,12 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  color: var(--red);
+  font-size: 36px;
+  justify-content: center;
+}
+
 h3 {
   color: var(--orange);
   font-size: 25px;
@@ -407,18 +413,12 @@ h3 {
 }
 
 h4 {
-  color: var(--red);
-  font-size: 36px;
-  justify-content: center;
-}
-
-h5 {
   color: var(--white);
   font-size: 20px;
   padding: 1rem;
 }
 
-h6 {
+h5 {
   color: var(--white);
   font-size: 15px;
 }
