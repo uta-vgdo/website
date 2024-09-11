@@ -439,18 +439,25 @@ ul {
   background-color: #0f171f;
 }
 
-.showcase-section {
+.upcoming-events-section {
   background-color: #0f171f;
 }
 
 /*
-.about-section {
+.showcase-section {
   background-color: #0f171f;
 }
 */
+
+.about-section {
+  background-color: #0f171f;
+}
+
+/*
 .calendar-section {
   background-color: #0f171f;
 }
+*/ 
 
 .about-container {
   display: flex;
