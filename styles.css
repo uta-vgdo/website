@@ -435,9 +435,13 @@ ul {
   justify-content: center;
 }
 
+
 .intro {
   background-color: #0f171f;
 }
+
+
+//Have this commented alternatively so that each div has alt colors
 
 .upcoming-events-section {
   background-color: #0f171f;
@@ -449,15 +453,23 @@ ul {
 }
 */
 
-.about-section {
-  background-color: #0f171f;
+.gallery-section {
+  background-color: #0f171f
 }
 
 /*
+.about-section {
+  background-color: #0f171f;
+}
+*/
+
+
 .calendar-section {
   background-color: #0f171f;
 }
-*/ 
+
+//end of alt color section
+
 
 .about-container {
   display: flex;
@@ -658,6 +670,13 @@ p {
   /* Fill the height of the container */
   object-fit: cover;
   /* Ensure the video covers the container */
+}
+
+.img-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 }
 
 .arrow-btn {

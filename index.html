@@ -128,6 +128,33 @@
       </div>
       <br><br><br>
     </div>
+    <div class="gallery-section">
+      <br><br>
+      <h2>VGDO Art Gallery</h2>
+      <br><br>
+      <h4>VGDO Art Jam 2024: Between Worlds</h4>
+      <div class="img-title">
+        <button id="prevImgBtn" class="arrow-btn">
+          <i class="fa-solid fa-arrow-left"></i>
+        </button>
+        <h3 id="imageTitle">Elevator Going Down</h3> <!-- Title element -->
+        <button id="nextImgBtn" class="arrow-btn">
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+
+      <!-- Artist link button -->
+      <div class="play-button-container">
+        <a id="artLink" href="https://kingp0opa.itch.io/elevator-going-down" target="_blank" class="play-button">Visit Artwork</a>
+      </div>
+      <br>
+      <div class="image-section">
+        <div class="image-container">
+          <img id="gameImage" width="640" height="360" src="Assets/ElevatorGoingDown.png" alt="Elevator Going Down" />
+        </div>
+      </div>
+      <br><br><br>
+    </div>
     <div class="about-section">
       <br><br>
       <h2>About VGDO</h2>
@@ -216,7 +243,7 @@
           </a>
         </li>
       </ul>
-      <p>gdc.uta@gmail.com</p>
+      <p>vgdo.uta@gmail.com</p>
       <p>@Copyright 2024 | Made by Video Game Developers Organization Officers at UTA</p>
     </footer>
   </div>
@@ -271,6 +298,48 @@
 
     // Initial video load
     changeVideo(currentVideoIndex);
+
+
+
+    // Image section script
+    const images = [
+      { src: 'Assets/ElevatorGoingDown.png', title: 'Jamie - Elevator Going Down', link: 'https://kingp0opa.itch.io/elevator-going-down', button: 'View Artwork' },
+      { src: 'Assets/RailroadsAndPills.png', title: 'Thanh - Railroads and Pills', link: 'https://ththed.itch.io/railroads-and-pills', button: 'View Artwork' },
+      { src: 'Assets/BetweenDimensions.jpg', title: 'Hadi - Between Dimensions', link: 'https://ha-ku.itch.io/between-dimensions', button: 'View Artwork' },
+      { src: 'Assets/TimeAndEmotion.png', title: 'Trinity - Time and Emotion', link: 'https://trinityinfinity8.itch.io/time-and-emotion', button: 'View Artwork' },
+      { src: 'Assets/WorldsBetween.png', title: 'Christopher - Worlds Between', link: 'https://rnguy3n.itch.io/vgdo-art-jam-fall-2024', button: 'View Artwork' },
+      { src: 'Assets/entry.jpg', title: 'Rayshaun - Entry', link: 'https://benignflower.itch.io/entry', button: 'View Artwork' },
+      { src: 'Assets/LifeChanging.png', title: 'Vincent - Life Changing', link: 'https://cents808.itch.io/life-changing', button: 'View Artwork' },
+      { src: 'Assets/OriginPoint.png', title: 'Huy - Origin Point', link: 'https://cacona.itch.io/origin-point', button: 'View Artwork' },
+      { src: 'Assets/AlmaMatter.png', title: 'Hadrien - Alma Mater', link: 'https://asandrake.itch.io/alma-mater', button: 'View Artwork' },
+    ];
+
+    const imageElement = document.getElementById('gameImage');
+    const imageTitle = document.getElementById('imageTitle');
+    const artLink = document.getElementById('artLink');
+
+    let currentImageIndex = 0;
+
+    function changeImage(index) {
+      imageElement.src = images[index].src;
+      imageTitle.textContent = images[index].title;
+      artLink.href = images[index].link || '#'; // Update the artist link
+      artLink.textContent = images[index].button;
+
+    }
+
+    function nextImage() {
+      currentImageIndex = (currentImageIndex + 1) % images.length;
+      changeImage(currentImageIndex);
+    }
+
+    document.getElementById('nextImgBtn').addEventListener('click', nextImage);
+    document.getElementById('prevImgBtn').addEventListener('click', function () {
+      currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+      changeImage(currentImageIndex);
+    });
+
+    changeImage(currentImageIndex);
   </script>
 </body>
 
