@@ -441,7 +441,7 @@ ul {
 }
 
 
-//Have this commented alternatively so that each div has alt colors
+/*Have this commented alternatively so that each div has alt colors*/
 
 .upcoming-events-section {
   background-color: #0f171f;
@@ -468,8 +468,17 @@ ul {
   background-color: #0f171f;
 }
 
-//end of alt color section
+/*end of alt color section*/
 
+.highlight-container {
+  display: inline-block;
+  background-color: var(--black);
+  color: var(--orange);
+  border: 2px solid var(--orange);
+  padding: 7px 15px;
+  text-decoration: none;
+  border-radius: 8px;
+}
 
 .about-container {
   display: flex;
