@@ -662,13 +662,6 @@ p {
   /* Ensure border is included in the container's width/height */
 }
 
-.image-container {
-  width: 100%;         /* Make the image take up 100% of the container's width */
-  max-width: 640px;     /* Ensure it doesn't get larger than its natural size */
-  height: auto;         /* Maintain the aspect ratio */
-  display: block;       /* Ensures no inline spacing issues */
-  margin: 0 auto;       /* Centers the image */
-}
 
 @media (max-width: 768px) {
   .video-container {
@@ -676,6 +669,14 @@ p {
     /* Adjust the width as needed */
     height: 200px;
     /* Adjust the height as needed */
+  }
+  /*To fit image to phone screens*/
+  .image-container img {
+    width: 100%;          /* Image takes up the full width of its container */
+    max-width: 100%;      /* Prevents the image from exceeding the screen width */
+    height: auto;         /* Maintains aspect ratio */
+    display: block;       /* Prevents inline spacing issues */
+    margin: 0 auto;       /* Centers the image */
   }
 }
 

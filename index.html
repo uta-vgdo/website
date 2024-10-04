@@ -137,7 +137,8 @@
       <br><br>
       <h2>VGDO Art Gallery</h2>
       <br><br>
-      <h4>VGDO Art Jam 2024: Between Worlds</h4>
+      <h1>VGDO Art Jam 2024: Between Worlds</h1>
+      <br>
       <div class="img-title">
         <button id="prevImgBtn" class="arrow-btn">
           <i class="fa-solid fa-arrow-left"></i>
@@ -147,7 +148,7 @@
           <i class="fa-solid fa-arrow-right"></i>
         </button>
       </div>
-
+      <h5 id="artPlace">First Place Winner</h3>
       <!-- Artist link button -->
       <div class="play-button-container">
         <a id="artLink" href="https://kingp0opa.itch.io/elevator-going-down" target="_blank" class="play-button">Visit Artwork</a>
@@ -308,9 +309,9 @@
 
     // Image section script
     const images = [
-      { src: 'Assets/ElevatorGoingDown.png', title: 'Jamie - Elevator Going Down', link: 'https://kingp0opa.itch.io/elevator-going-down', button: 'View Artwork' },
-      { src: 'Assets/RailroadsAndPills.png', title: 'Thanh - Railroads and Pills', link: 'https://ththed.itch.io/railroads-and-pills', button: 'View Artwork' },
-      { src: 'Assets/BetweenDimensions.jpg', title: 'Hadi - Between Dimensions', link: 'https://ha-ku.itch.io/between-dimensions', button: 'View Artwork' },
+      { src: 'Assets/ElevatorGoingDown.png', title: 'Jamie - Elevator Going Down', link: 'https://kingp0opa.itch.io/elevator-going-down', button: 'View Artwork', artPlace: 'First Place Winner' },
+      { src: 'Assets/RailroadsAndPills.png', title: 'Thanh - Railroads and Pills', link: 'https://ththed.itch.io/railroads-and-pills', button: 'View Artwork', artPlace: 'Second Place Winner' },
+      { src: 'Assets/BetweenDimensions.jpg', title: 'Hadi - Between Dimensions', link: 'https://ha-ku.itch.io/between-dimensions', button: 'View Artwork', artPlace: 'Third Place Winner' },
       { src: 'Assets/TimeAndEmotion.png', title: 'Trinity - Time and Emotion', link: 'https://trinityinfinity8.itch.io/time-and-emotion', button: 'View Artwork' },
       { src: 'Assets/WorldsBetween.png', title: 'Christopher - Worlds Between', link: 'https://rnguy3n.itch.io/vgdo-art-jam-fall-2024', button: 'View Artwork' },
       { src: 'Assets/entry.jpg', title: 'Rayshaun - Entry', link: 'https://benignflower.itch.io/entry', button: 'View Artwork' },
@@ -322,6 +323,7 @@
     const imageElement = document.getElementById('gameImage');
     const imageTitle = document.getElementById('imageTitle');
     const artLink = document.getElementById('artLink');
+    const artPlace = document.getElementById('artPlace');
 
     let currentImageIndex = 0;
 
@@ -330,7 +332,7 @@
       imageTitle.textContent = images[index].title;
       artLink.href = images[index].link || '#'; // Update the artist link
       artLink.textContent = images[index].button;
-
+      artPlace.textContent = images[index].artPlace;
     }
 
     function nextImage() {
