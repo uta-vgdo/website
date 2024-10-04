@@ -662,6 +662,14 @@ p {
   /* Ensure border is included in the container's width/height */
 }
 
+.image-container {
+  width: 100%;         /* Make the image take up 100% of the container's width */
+  max-width: 640px;     /* Ensure it doesn't get larger than its natural size */
+  height: auto;         /* Maintain the aspect ratio */
+  display: block;       /* Ensures no inline spacing issues */
+  margin: 0 auto;       /* Centers the image */
+}
+
 @media (max-width: 768px) {
   .video-container {
     width: 400px;
