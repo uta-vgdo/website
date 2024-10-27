@@ -138,6 +138,31 @@
       </div>
       <br><br><br>
     </div>
+    <div class="music-section">
+      <br><br>
+      <h2>VGDO Community's Soundtracks</h2>
+      <br><br>
+      <div class="playlist-title">
+        <button id="prevPlaylistBtn" class="arrow-btn">
+          <i class="fa-solid fa-arrow-left"></i>
+        </button>
+        <h1 id="playlistTitle">VGDO Music Jam 2024: Drifting Away</h1> <!-- Title element -->
+        <button id="nextPlaylistBtn" class="arrow-btn">
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+      <!-- Playlist link button -->
+      <div class="play-button-container">
+        <a id="playlistLink" href="https://link-to-playlist.com" target="_blank" class="play-button">Listen to Playlist</a>
+      </div>
+      <br>
+      <div class="playlist-section">
+        <div class="image-container">
+          <img id="playlistImage" width="640" height="360" src="Assets/DriftingAwayLogo.png" alt="DriftingAwayLogo" />
+        </div>
+      </div>
+      <br><br><br>
+    </div>
     <div class="gallery-section">
       <br><br>
       <h2>VGDO Art Gallery</h2>
@@ -310,6 +335,39 @@
     changeVideo(currentVideoIndex);
 
 
+    // Playlist section script
+    const playlists = [
+      { src: 'Assets/DriftingAwayLogo.png', title: 'VGDO Music Jam 2024: Drifting Away', link: 'https://soundcloud.com/vgdo-uta/sets/vgdo-music-jam-2024-drifting?si=d80db88bf8fa45b9b3093303efa2ba77&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing', button: 'Listen To Soundtracks' },
+    // Add more playlist objects here in the future
+    ];
+
+    const playlistElement = document.getElementById('playlistImage');
+    const playlistTitle = document.getElementById('playlistTitle');
+    const playlistLink = document.getElementById('playlistLink');
+    const musicPlace = document.getElementById('musicPlace');
+
+    let currentPlaylistIndex = 0;
+
+    function changePlaylist(index) {
+      playlistElement.src = playlists[index].src;
+      playlistTitle.textContent = playlists[index].title;
+      playlistLink.href = playlists[index].link || '#';
+      playlistLink.textContent = playlists[index].button;
+      musicPlace.textContent = playlists[index].musicPlace;
+    }
+
+    function nextPlaylist() {
+      currentPlaylistIndex = (currentPlaylistIndex + 1) % playlists.length;
+      changePlaylist(currentPlaylistIndex);
+    }
+
+    document.getElementById('nextPlaylistBtn').addEventListener('click', nextPlaylist);
+    document.getElementById('prevPlaylistBtn').addEventListener('click', function () {
+      currentPlaylistIndex = (currentPlaylistIndex - 1 + playlists.length) % playlists.length;
+      changePlaylist(currentPlaylistIndex);
+    });
+
+    changePlaylist(currentPlaylistIndex);
 
     // Image section script
     const images = [
