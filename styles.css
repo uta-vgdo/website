@@ -53,6 +53,7 @@ FFDEBE
   }
 }
 
+/*Leaves animation*/
 @keyframes animateBubbles {
   100% {
     opacity: 0;
@@ -517,7 +518,7 @@ ul {
 img {
   /*border-radius: 50%; */
   padding: 10px;
-  width: 500px;
+  width: 1000px;
   /* Adjusts the width to 50% of the parent container */
   height: auto;
   /* Maintains the aspect ratio */
