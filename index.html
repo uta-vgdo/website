@@ -40,10 +40,13 @@
       <br>
       <h4><br>Meetings are every Friday 12-2pm<br>Room: ERB 130<br><br></h4>
       <div class="highlight-container">
-        <h2>VGDO GAME JAM: ???<br>starting very soon!</h2> <!--
+        <h2>VGDO GAME JAM: ???<br>starting very soon!</h2> 
         <div class="play-button-container">
-            <a href="https://itch.io/jam/vgdo-music-jam-fall-2024" class="play-button">CHECK OUT SUBMISSIONS</a>
-        </div> -->
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfs8igAD1tOwgY8g-ZCs98lyklf8ZfjOjnl_EsdoyICK821xA/viewform?fbzx=8262474177751113674" class="play-button">REGISTER YOUR TEAM</a>
+        </div> 
+        <div class="play-button-container">
+          <a href="https://itch.io/jam/vgdo-game-jam-fall-2024" class="play-button">JOIN THE JAM</a>
+        </div> 
         <br>
         <h3>November 1st - 17th</h3>
       </div>
@@ -142,14 +145,14 @@
       <br><br>
       <h2>VGDO Community's Soundtracks</h2>
       <br><br>
-      <div class="playlist-title">
+      <div class="playlist-title"> <!-- COMMENT OUT UNTIL WE ADD MORE
         <button id="prevPlaylistBtn" class="arrow-btn">
           <i class="fa-solid fa-arrow-left"></i>
-        </button>
+        </button> -->
         <h1 id="playlistTitle">VGDO Music Jam 2024: Drifting Away</h1> <!-- Title element -->
-        <button id="nextPlaylistBtn" class="arrow-btn">
+        <button id="nextPlaylistBtn" class="arrow-btn"> <!-- COMMENT OUT UNTIL WE ADD MORE
           <i class="fa-solid fa-arrow-right"></i>
-        </button>
+        </button> -->
       </div>
       <!-- Playlist link button -->
       <div class="play-button-container">
@@ -335,39 +338,7 @@
     changeVideo(currentVideoIndex);
 
 
-    // Playlist section script
-    const playlists = [
-      { src: 'Assets/DriftingAwayLogo.png', title: 'VGDO Music Jam 2024: Drifting Away', link: 'https://soundcloud.com/vgdo-uta/sets/vgdo-music-jam-2024-drifting?si=d80db88bf8fa45b9b3093303efa2ba77&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing', button: 'Listen To Soundtracks' },
-    // Add more playlist objects here in the future
-    ];
-
-    const playlistElement = document.getElementById('playlistImage');
-    const playlistTitle = document.getElementById('playlistTitle');
-    const playlistLink = document.getElementById('playlistLink');
-    const musicPlace = document.getElementById('musicPlace');
-
-    let currentPlaylistIndex = 0;
-
-    function changePlaylist(index) {
-      playlistElement.src = playlists[index].src;
-      playlistTitle.textContent = playlists[index].title;
-      playlistLink.href = playlists[index].link || '#';
-      playlistLink.textContent = playlists[index].button;
-      musicPlace.textContent = playlists[index].musicPlace;
-    }
-
-    function nextPlaylist() {
-      currentPlaylistIndex = (currentPlaylistIndex + 1) % playlists.length;
-      changePlaylist(currentPlaylistIndex);
-    }
-
-    document.getElementById('nextPlaylistBtn').addEventListener('click', nextPlaylist);
-    document.getElementById('prevPlaylistBtn').addEventListener('click', function () {
-      currentPlaylistIndex = (currentPlaylistIndex - 1 + playlists.length) % playlists.length;
-      changePlaylist(currentPlaylistIndex);
-    });
-
-    changePlaylist(currentPlaylistIndex);
+    
 
     // Image section script
     const images = [
@@ -409,6 +380,42 @@
     });
 
     changeImage(currentImageIndex);
+
+
+
+    // Playlist section script
+    const playlists = [
+      { src: 'Assets/DriftingAwayLogo.png', title: 'VGDO Music Jam 2024: Drifting Away', link: 'https://soundcloud.com/vgdo-uta/sets/vgdo-music-jam-2024-drifting?si=d80db88bf8fa45b9b3093303efa2ba77&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing', button: 'Listen To Soundtracks' },
+    // Add more playlist objects here in the future
+    ];
+
+    const playlistElement = document.getElementById('playlistImage');
+    const playlistTitle = document.getElementById('playlistTitle');
+    const playlistLink = document.getElementById('playlistLink');
+    const musicPlace = document.getElementById('musicPlace');
+
+    let currentPlaylistIndex = 0;
+
+    function changePlaylist(index) {
+      playlistElement.src = playlists[index].src;
+      playlistTitle.textContent = playlists[index].title;
+      playlistLink.href = playlists[index].link || '#';
+      playlistLink.textContent = playlists[index].button;
+      musicPlace.textContent = playlists[index].musicPlace;
+    }
+
+    function nextPlaylist() {
+      currentPlaylistIndex = (currentPlaylistIndex + 1) % playlists.length;
+      changePlaylist(currentPlaylistIndex);
+    }
+
+    document.getElementById('nextPlaylistBtn').addEventListener('click', nextPlaylist);
+    document.getElementById('prevPlaylistBtn').addEventListener('click', function () {
+      currentPlaylistIndex = (currentPlaylistIndex - 1 + playlists.length) % playlists.length;
+      changePlaylist(currentPlaylistIndex);
+    });
+
+    changePlaylist(currentPlaylistIndex);
   </script>
 </body>
 
