@@ -4,7 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/website', // Replace with your repository name
+  base: 'https://uta-vgdo.github.io/website/',
   plugins: [
     react(),
     tailwindcss(),
