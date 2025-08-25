@@ -3,6 +3,7 @@ import './App.css'
 import { Navbar } from './components/Navbar'
 import { Footer } from './components/Footer'
 import vgdo_mascot from './assets/VGDOpanda.png'
+import last_lap from './assets/LastLap.mp4'
 
 function App() {
 
@@ -44,20 +45,165 @@ function App() {
         </div>
       </div>
 
-      <div className='h-screen flex justify-center'>
+      <div className='h-screen'>
         VGDO Game Showcase
+        <div className='grid grid-cols-1 lg:grid-cols-3 gap-x-96 place-items-center'>
+          <div className='w-100 lg:w-125'>
+            <p>
+              Last Lap - Nnanna
+              <br></br>
+              VGDO Burnout Jam 2nd Place
+            </p>
+            <video controls src={last_lap}></video>
+          </div>
+          <div className='w-100 lg:w-125'>
+            <p>
+              Last Lap - Nnanna
+              <br></br>
+              VGDO Burnout Jam 2nd Place
+            </p>
+            <video controls src={last_lap}></video>
+          </div>
+          <div className='w-100 lg:w-125'>
+            <p>
+              Last Lap - Nnanna
+              <br></br>
+              VGDO Burnout Jam 2nd Place
+            </p>
+            <video controls src={last_lap}></video>
+          </div>
+          <div className='w-100 lg:w-125'>
+            <p>
+              Last Lap - Nnanna
+              <br></br>
+              VGDO Burnout Jam 2nd Place
+            </p>
+            <video controls src={last_lap}></video>
+          </div>
+          <div className='w-100 lg:w-125'>
+            <p>
+              Last Lap - Nnanna
+              <br></br>
+              VGDO Burnout Jam 2nd Place
+            </p>
+            <video controls src={last_lap}></video>
+          </div>
+          <div className='w-100 lg:w-125'>
+            <p>
+              Last Lap - Nnanna
+              <br></br>
+              VGDO Burnout Jam 2nd Place
+            </p>
+            <video controls src={last_lap}></video>
+          </div>
+        </div>
+
       </div>
 
       <div className='h-screen justify-center'>
         VGDO Soundtracks Showcase
 
-        <div className='flex justify-center'>
-          <iframe
-            width="50%"
-            height="166"
-            allow="autoplay"
-            src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/vgdo-uta/sets/vgdo-music-jam-2024-drifting&color=%231a1717&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&sharing=false&show_playcount=false"
-          />
+        <div className='grid grid-cols-1 lg:grid-cols-3 gap-x-96 place-items-center items-start'>
+          <div>
+            <p>
+              Cavity - orijinl.
+              <br></br>
+              1st Place Winner - Drifting Away Music Jam
+            </p>
+            <div className='lg:w-220'>
+              <div className='flex justify-center'>
+                <iframe
+                  width="50%"
+                  height="166"
+                  allow="autoplay"
+                  src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/vgdo-uta/sets/vgdo-music-jam-2024-drifting&color=%231a1717&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&sharing=false&show_playcount=false"
+                />
+              </div>
+            </div>
+            <div className='lg:w-220'>
+              <div className='flex justify-center'>
+                <iframe
+                  width="50%"
+                  height="166"
+                  allow="autoplay"
+                  src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/vgdo-uta/sets/vgdo-music-jam-2024-drifting&color=%231a1717&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&sharing=false&show_playcount=false"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <p>
+              Cavity - orijinl.
+              <br></br>
+              1st Place Winner - Drifting Away Music Jam
+            </p>
+            <div className='lg:w-220'>
+              <div className='flex justify-center'>
+                <iframe
+                  width="50%"
+                  height="166"
+                  allow="autoplay"
+                  src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/vgdo-uta/sets/vgdo-music-jam-2024-drifting&color=%231a1717&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&sharing=false&show_playcount=false"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <p>
+              Cavity - orijinl.
+              <br></br>
+              1st Place Winner - Drifting Away Music Jam
+            </p>
+            <div className='lg:w-220'>
+              <div className='flex justify-center'>
+                <iframe
+                  width="50%"
+                  height="166"
+                  allow="autoplay"
+                  src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/vgdo-uta/sets/vgdo-music-jam-2024-drifting&color=%231a1717&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&sharing=false&show_playcount=false"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <p>
+              Cavity - orijinl.
+              <br></br>
+              1st Place Winner - Drifting Away Music Jam
+            </p>
+            <div className='lg:w-220'>
+              <div className='flex justify-center'>
+                <iframe
+                  width="50%"
+                  height="166"
+                  allow="autoplay"
+                  src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/vgdo-uta/sets/vgdo-music-jam-2024-drifting&color=%231a1717&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&sharing=false&show_playcount=false"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <p>
+              Cavity - orijinl.
+              <br></br>
+              1st Place Winner - Drifting Away Music Jam
+            </p>
+            <div className='lg:w-220'>
+              <div className='flex justify-center'>
+                <iframe
+                  width="50%"
+                  height="166"
+                  allow="autoplay"
+                  src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/vgdo-uta/sets/vgdo-music-jam-2024-drifting&color=%231a1717&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&sharing=false&show_playcount=false"
+                />
+              </div>
+            </div>
+          </div>
+
         </div>
 
       </div>
