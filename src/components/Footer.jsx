@@ -1,4 +1,3 @@
-import vgdo_logo from "../assets/VGDOSecondary.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faDiscord,
@@ -6,9 +5,8 @@ import {
   faInstagram,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
-import { faD } from "@fortawesome/free-solid-svg-icons";
 
-export const Footer = () => {
+const Footer = () => {
   return (
     <footer className='flex w-full mt-auto items-center z-50 border-t-4 bg-[#161f28] border-[#B03626] py-10'>
       <div className='flex flex-col items-center w-full lg:mr-10 text-white'>
@@ -78,3 +76,5 @@ export const Footer = () => {
     </footer>
   );
 };
+
+export default Footer;

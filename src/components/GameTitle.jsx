@@ -1,6 +1,6 @@
-export const GameTitle = ({ title, creator, video_src }) => {
+const GameTitle = ({ title, creator, video_src }) => {
   return (
-    <div className="w-75 lg:w-100">
+    <div className='w-75 lg:w-100'>
       <p>
         {title}
         <br></br>
@@ -10,3 +10,5 @@ export const GameTitle = ({ title, creator, video_src }) => {
     </div>
   );
 };
+
+export default GameTitle;

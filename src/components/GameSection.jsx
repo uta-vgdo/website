@@ -1,52 +1,22 @@
-import { GameTitle } from "./GameTitle";
-import last_lap from "../assets/LastLap.mp4";
+import gameJamData from "../../constant/gameJamData.json";
+import GameTitle from "./GameTitle";
 
-export const GameSection = () => {
+const GameSection = () => {
   return (
-    <div className="min-h-screen text-center text-white">
+    <div className='min-h-screen text-center text-white'>
       VGDO Game Showcase
-      <div className="grid grid-cols-1 lg:grid-cols-3 place-items-center">
-        <GameTitle
-          title="Last Lap"
-          creator="Nnanna - 2nd Place Burnout Jam Winner"
-          video_src={last_lap}
-        ></GameTitle>
-        <GameTitle
-          title="Last Lap"
-          creator="Nnanna - 2nd Place Burnout Jam Winner"
-          video_src={last_lap}
-        ></GameTitle>
-        <GameTitle
-          title="Last Lap"
-          creator="Nnanna - 2nd Place Burnout Jam Winner"
-          video_src={last_lap}
-        ></GameTitle>
-        <GameTitle
-          title="Last Lap"
-          creator="Nnanna - 2nd Place Burnout Jam Winner"
-          video_src={last_lap}
-        ></GameTitle>
-        <GameTitle
-          title="Last Lap"
-          creator="Nnanna - 2nd Place Burnout Jam Winner"
-          video_src={last_lap}
-        ></GameTitle>
-        <GameTitle
-          title="Last Lap"
-          creator="Nnanna - 2nd Place Burnout Jam Winner"
-          video_src={last_lap}
-        ></GameTitle>
-        <GameTitle
-          title="Last Lap"
-          creator="Nnanna - 2nd Place Burnout Jam Winner"
-          video_src={last_lap}
-        ></GameTitle>
-        <GameTitle
-          title="Last Lap"
-          creator="Nnanna - 2nd Place Burnout Jam Winner"
-          video_src={last_lap}
-        ></GameTitle>
+      <div className='grid grid-cols-1 lg:grid-cols-3 place-items-center'>
+        {gameJamData.map((game) => (
+          <GameTitle
+            key={game.id}
+            title={game.title}
+            creator={game.creator}
+            video_src={game.video_src}
+          />
+        ))}
       </div>
     </div>
   );
 };
+
+export default GameSection;

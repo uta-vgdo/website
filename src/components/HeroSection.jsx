@@ -1,6 +1,4 @@
-import vgdo_mascot from "../assets/VGDOpanda.png";
-
-export const HeroSection = () => {
+const HeroSection = () => {
   return (
     <div className='min-h-screen bg-[#161F28]'>
       <div className='flex justify-center text-white text-5xl text-center mt-25'>
@@ -10,7 +8,11 @@ export const HeroSection = () => {
         Welcome to VGDO!
       </div>
 
-      <img src={vgdo_mascot} width={512} className='mx-auto'></img>
+      <img
+        src={"/website/assets/VGDOpanda.png"}
+        width={512}
+        className='mx-auto'
+      ></img>
 
       <div className='flex justify-center text-4xl text-red-500 my-5'>
         Meetings: TBA
@@ -27,3 +29,5 @@ export const HeroSection = () => {
     </div>
   );
 };
+
+export default HeroSection;

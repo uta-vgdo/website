@@ -1,4 +1,4 @@
-export const MusicArtist = ({ title, creator, soundcloud_links }) => {
+const MusicArtist = ({ title, creator, soundcloud_links }) => {
   return (
     <div>
       <p>
@@ -8,12 +8,14 @@ export const MusicArtist = ({ title, creator, soundcloud_links }) => {
       </p>
 
       {soundcloud_links.map((link, index) => (
-        <div key={index} className="lg:w-220">
-          <div className="flex justify-center">
-            <iframe width="50%" height="166" allow="autoplay" src={link} />
+        <div key={index} className='lg:w-220'>
+          <div className='flex justify-center'>
+            <iframe width='50%' height='166' allow='autoplay' src={link} />
           </div>
         </div>
       ))}
     </div>
   );
 };
+
+export default MusicArtist;

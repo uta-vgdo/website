@@ -1,4 +1,4 @@
-export const AboutSection = () => {
+const AboutSection = () => {
   return (
     <div className='min-h-screen text-white'>
       <div className='text-center'>About VGDO</div>
@@ -23,3 +23,4 @@ export const AboutSection = () => {
     </div>
   );
 };
+export default AboutSection;

@@ -1,6 +1,6 @@
-export const ArtPiece = ({ title, creator, img_src }) => {
+const ArtPiece = ({ title, creator, img_src }) => {
   return (
-    <div className="w-100 lg:w-125">
+    <div className='w-100 lg:w-125'>
       <p>
         {title}
         <br></br>
@@ -10,3 +10,5 @@ export const ArtPiece = ({ title, creator, img_src }) => {
     </div>
   );
 };
+
+export default ArtPiece;

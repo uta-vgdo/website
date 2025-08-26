@@ -6,7 +6,6 @@ import {
   faGithub,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
-import mavEngageLogo from "../../public/assets/MavEngage.png";
 
 const SocialSection = () => {
   return (
@@ -21,7 +20,11 @@ const SocialSection = () => {
         <FontAwesomeIcon icon={faGithub} size='2x' />
       </a>
       <a href='https://mavengage.com' target='_blank' rel='noopener noreferrer'>
-        <img src={mavEngageLogo} alt='MavEngage Logo' className='h-8 w-8' />
+        <img
+          src={"/website/assets/MavEngage.png"}
+          alt='MavEngage Logo'
+          className='h-8 w-8'
+        />
       </a>
       <a href='https://youtube.com' target='_blank' rel='noopener noreferrer'>
         <FontAwesomeIcon icon={faYoutube} size='2x' />
