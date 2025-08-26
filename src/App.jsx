@@ -14,6 +14,7 @@ function App() {
     <>
       <Navbar></Navbar>
       
+      <div className='overflow-x-hidden'>
       <div className='min-h-screen'>
         <div className='flex justify-center text-5xl mt-25'>
           Video Game Developers Organization at UTA
@@ -111,8 +112,8 @@ function App() {
 
       </div>
 
-
-      <Footer></Footer>
+    </div>
+    <Footer></Footer>
     </>
   )
 }
