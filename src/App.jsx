@@ -50,9 +50,9 @@ function App() {
           </div>
         </div>
 
-        <div className="min-h-screen">
+        <div className="min-h-screen text-center">
           VGDO Game Showcase
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-96 place-items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-3 place-items-center">
             <GameTitle
               title="Last Lap"
               creator="Nnanna - 2nd Place Burnout Jam Winner"
@@ -98,7 +98,7 @@ function App() {
 
         <div className="min-h-screen">
           VGDO Soundtracks Showcase
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-96 place-items-center items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-3 place-items-center items-start">
             <MusicArtist
               title="cavity."
               creator="orijinl - 1st Place Drifting Away Jam Winner"
@@ -129,7 +129,7 @@ function App() {
 
         <div className="min-h-screen justify-center">
           VGDO Art Gallery
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-96 place-items-center items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-3 place-items-center items-start">
             <ArtPiece
               title="Elevator Going Down"
               creator="Jamie - 1st Place Between Worlds Jam Winner"
