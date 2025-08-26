@@ -2,8 +2,8 @@ import vgdo_mascot from "../assets/VGDOpanda.png";
 
 export const HeroSection = () => {
   return (
-    <div className="min-h-screen">
-      <div className="flex justify-center text-5xl text-center mt-25">
+    <div className="min-h-screen bg-[#161F28]">
+      <div className="flex justify-center text-white text-5xl text-center mt-25">
         Video Game Developers Organization at UTA
       </div>
       <div className="flex justify-center text-4xl text-red-500 my-5">

@@ -10,11 +10,15 @@ import { faD } from "@fortawesome/free-solid-svg-icons";
 
 export const Footer = () => {
   return (
-    <footer className="flex w-full mt-auto items-center bg-[rgb(26,23,23)] z-50 border-t-4 border-red-600 py-10">
+    <footer className="flex w-full mt-auto items-center z-50 border-t-4 bg-[#161f28] border-[#B03626] py-10">
       <div className="flex flex-col items-center w-full lg:mr-10 text-white">
         <ul className="flex">
           <li className=" mx-5">
-            <a href="#about">
+            <a
+              href="https://www.instagram.com/vgdo.uta/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon
                 icon={faInstagram}
                 size="2xl"
@@ -23,7 +27,11 @@ export const Footer = () => {
             </a>
           </li>
           <li className=" mx-5">
-            <a href="#about">
+            <a
+              href="https://www.youtube.com/channel/UCrrzkBBPpxTtxKLyEsx5_UA"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon
                 icon={faYoutube}
                 size="2xl"
@@ -32,7 +40,11 @@ export const Footer = () => {
             </a>
           </li>
           <li className=" mx-5">
-            <a href="#about">
+            <a
+              href="https://github.com/uta-vgdo"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon
                 icon={faGithub}
                 size="2xl"
@@ -41,7 +53,11 @@ export const Footer = () => {
             </a>
           </li>
           <li className=" mx-5">
-            <a href="#about">
+            <a
+              href="https://discord.gg/k5cgBEStQj"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon
                 icon={faDiscord}
                 size="2xl"
@@ -51,7 +67,9 @@ export const Footer = () => {
           </li>
         </ul>
         <p className="text-center pt-2">
-          vgdo.uta@gmail.com
+          <a href="mailto:vgdo.uta@gmail.com" className="hover:text-red-500">
+            vgdo.uta@gmail.com
+          </a>
           <br></br>
           @Copyright 2025 | Made by Video Game Developers Organization Officers
           at UTA

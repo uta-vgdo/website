@@ -2,7 +2,7 @@ import { MusicArtist } from "./MusicArtist";
 
 export const MusicSection = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen text-center text-white">
       VGDO Soundtracks Showcase
       <div className="grid grid-cols-1 lg:grid-cols-3 place-items-center items-start">
         <MusicArtist

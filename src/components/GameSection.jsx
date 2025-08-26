@@ -3,7 +3,7 @@ import last_lap from "../assets/LastLap.mp4";
 
 export const GameSection = () => {
   return (
-    <div className="min-h-screen text-center">
+    <div className="min-h-screen text-center text-white">
       VGDO Game Showcase
       <div className="grid grid-cols-1 lg:grid-cols-3 place-items-center">
         <GameTitle
