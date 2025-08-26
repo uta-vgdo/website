@@ -1,12 +1,12 @@
-import React from "react";
-
-const AboutSection = () => {
+export const AboutSection = () => {
   return (
-    <div className='flex justify-center gap-90 min-h-screen'>
-      <div>About VGDO</div>
+    <div className='min-h-screen text-white'>
+      <div className='text-center'>About VGDO</div>
       <div>
-        <div>Guiding the Next Generation of Game Developers</div>
-        <div className='text-left'>
+        <div className='text-center'>
+          Guiding the Next Generation of Game Developers
+        </div>
+        <div className='text-left mx-10'>
           The Video Game Developers Organization (VGDO) is dedicated to
           empowering aspiring game developers and designers by providing the
           knowledge and tools necessary to bring their creative visions to life.
@@ -23,5 +23,3 @@ const AboutSection = () => {
     </div>
   );
 };
-
-export default AboutSection;
