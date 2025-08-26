@@ -22,17 +22,19 @@ function App() {
             Welcome to VGDO!
           </div>
 
-          <img src={vgdo_mascot}></img>
+          <img src={vgdo_mascot} width={512} className="mx-auto"></img>
 
           <div className="flex justify-center text-4xl text-red-500">
-            Meeting: TBA
+            Meetings: TBA
           </div>
         </div>
 
-        <div className="flex justify-center gap-90 min-h-screen">
-          <div>About VGDO</div>
+        <div className="min-h-screen">
+          <div className="text-center">About VGDO</div>
           <div>
-            <div>Guiding the Next Generation of Game Developers</div>
+            <div className="text-center">
+              Guiding the Next Generation of Game Developers
+            </div>
             <div className="text-left">
               The Video Game Developers Organization (VGDO) is dedicated to
               empowering aspiring game developers and designers by providing the
