@@ -1,7 +1,7 @@
 const ArtPiece = ({ title, creator, img_src }) => {
   return (
-    <div className="h-72  text-center">
-      <p>
+    <div className="h-72  text-center py-5">
+      <p className="text-primary text-center text-lg">
         {title}
         <br></br>
         {creator}
