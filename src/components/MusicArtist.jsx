@@ -1,6 +1,6 @@
 const MusicArtist = ({ title, creator, soundcloud_links }) => {
   return (
-    <div>
+    <div className="text-center">
       <p>
         {title}
         <br></br>
@@ -8,9 +8,9 @@ const MusicArtist = ({ title, creator, soundcloud_links }) => {
       </p>
 
       {soundcloud_links.map((link, index) => (
-        <div key={index} className='lg:w-220'>
-          <div className='flex justify-center'>
-            <iframe width='50%' height='166' allow='autoplay' src={link} />
+        <div key={index} className="lg:w-220">
+          <div className="flex justify-center">
+            <iframe width="50%" height="166" allow="autoplay" src={link} />
           </div>
         </div>
       ))}

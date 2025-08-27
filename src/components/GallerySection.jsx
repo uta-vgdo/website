@@ -3,11 +3,11 @@ import artJamData from "../../constant/artJamData.json";
 
 const GallerySection = () => {
   return (
-    <div className='min-h-screen  text-white'>
-      <div className=' text-5xl pb-4 text-tertiary font-bold'>
+    <div className="min-h-screen  text-white">
+      <div className=" text-5xl pb-4 text-tertiary font-bold">
         VGDO Art Gallery
       </div>
-      <div className='grid grid-cols-1 lg:grid-cols-3 place-items-center items-start'>
+      <div className="grid grid-cols-1 lg:grid-cols-3 items-start gap-12 px-5">
         {artJamData.map((art, index) => (
           <ArtPiece
             key={index}

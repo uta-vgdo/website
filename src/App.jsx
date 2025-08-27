@@ -12,7 +12,7 @@ function App() {
     <>
       <Navbar />
 
-      <div className='overflow-x-hidden mx-20'>
+      <div className="overflow-x-hidden">
         <HeroSection />
         <AboutSection />
         <GameSection />

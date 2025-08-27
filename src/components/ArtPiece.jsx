@@ -1,12 +1,15 @@
 const ArtPiece = ({ title, creator, img_src }) => {
   return (
-    <div className='w-100 lg:w-125'>
+    <div className="h-72  text-center">
       <p>
         {title}
         <br></br>
         {creator}
       </p>
-      <img src={img_src}></img>
+      <img
+        src={img_src}
+        className="w-full h-full object-contain bg-black/20 rounded-3xl"
+      ></img>
     </div>
   );
 };
