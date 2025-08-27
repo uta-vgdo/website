@@ -1,32 +1,45 @@
+import React from "react";
+
 const HeroSection = () => {
   return (
-    <div className='min-h-screen bg-[#161F28]'>
-      <div className='flex justify-center text-white text-5xl text-center mt-25'>
+    <section className='hero-section h-screen bg-[#161F28] flex flex-col justify-center items-center px-6 text-center'>
+      {/* Main Heading */}
+      <h1 className='text-white text-5xl md:text-6xl font-bold mb-4'>
         Video Game Developers Organization at UTA
-      </div>
-      <div className='flex justify-center text-4xl text-red-500 my-5'>
-        Welcome to VGDO!
-      </div>
+      </h1>
 
+      {/* Subheading */}
+      <p className='text-red-500 text-2xl md:text-3xl mb-8'>Welcome to VGDO!</p>
+
+      {/* Hero Image */}
       <img
-        src={"/website/assets/VGDOpanda.png"}
-        width={512}
-        className='mx-auto'
-      ></img>
+        src='/website/assets/VGDOpanda.png'
+        alt='VGDO Panda Logo'
+        className='hero-image w-64 md:w-96 mb-8 rounded-xl shadow-lg'
+      />
 
-      <div className='flex justify-center text-4xl text-red-500 my-5'>
-        Meetings: TBA
-      </div>
+      {/* Info Text */}
+      <p className='text-white text-xl md:text-2xl mb-8'>Meetings: TBA</p>
 
-      <div className='flex justify-center gap-5'>
-        <button className='bg-blue-100 p-5 rounded-2xl hover:cursor-pointer hover:bg-blue-500'>
+      {/* CTA Buttons */}
+      <div className='flex flex-col sm:flex-row gap-4 sm:gap-6'>
+        {/* Outline Button */}
+        <a
+          href='#more-info'
+          className='hero-button px-6 py-3 rounded-2xl font-semibold text-white border-2 border-white hover:bg-white hover:text-[#161F28]'
+        >
           More Info
-        </button>
-        <button className='bg-blue-100 p-5 rounded-2xl hover:cursor-pointer hover:bg-blue-500'>
+        </a>
+
+        {/* Solid Button */}
+        <a
+          href='#join'
+          className='hero-button px-6 py-3 rounded-2xl font-semibold text-white bg-red-500 hover:bg-red-600'
+        >
           Join Now!
-        </button>
+        </a>
       </div>
-    </div>
+    </section>
   );
 };
 

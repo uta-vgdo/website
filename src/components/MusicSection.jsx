@@ -2,8 +2,11 @@ import MusicArtist from "./MusicArtist";
 
 const MusicSection = () => {
   return (
-    <div className='min-h-screen text-center text-white'>
-      VGDO Soundtracks Showcase
+    <div className='min-h-screen  text-white'>
+      <div className=' text-5xl pb-4 text-tertiary font-bold'>
+        VGDO Soundtracks Showcase
+      </div>
+
       <div className='grid grid-cols-1 lg:grid-cols-3 place-items-center items-start'>
         <MusicArtist
           title='cavity.'

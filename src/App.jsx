@@ -1,5 +1,3 @@
-//import { useState } from 'react'
-import "./App.css";
 import AboutSection from "./components/AboutSection";
 import Footer from "./components/Footer";
 import GallerySection from "./components/GallerySection";
@@ -14,7 +12,7 @@ function App() {
     <>
       <Navbar />
 
-      <div className='overflow-x-hidden'>
+      <div className='overflow-x-hidden mx-20'>
         <HeroSection />
         <AboutSection />
         <GameSection />

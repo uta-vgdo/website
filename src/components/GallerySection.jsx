@@ -1,35 +1,21 @@
 import ArtPiece from "./ArtPiece";
+import artJamData from "../../constant/artJamData.json";
 
 const GallerySection = () => {
   return (
-    <div className='min-h-screen text-center text-white'>
-      VGDO Art Gallery
+    <div className='min-h-screen  text-white'>
+      <div className=' text-5xl pb-4 text-tertiary font-bold'>
+        VGDO Art Gallery
+      </div>
       <div className='grid grid-cols-1 lg:grid-cols-3 place-items-center items-start'>
-        <ArtPiece
-          title='Elevator Going Down'
-          creator='Jamie - 1st Place Between Worlds Jam Winner'
-          img_src={"/website/assets/VGDOpanda.png"}
-        ></ArtPiece>
-        <ArtPiece
-          title='Elevator Going Down'
-          creator='Jamie - 1st Place Between Worlds Jam Winner'
-          img_src={"/website/assets/VGDOpanda.png"}
-        ></ArtPiece>
-        <ArtPiece
-          title='Elevator Going Down'
-          creator='Jamie - 1st Place Between Worlds Jam Winner'
-          img_src={"/website/assets/VGDOpanda.png"}
-        ></ArtPiece>
-        <ArtPiece
-          title='Elevator Going Down'
-          creator='Jamie - 1st Place Between Worlds Jam Winner'
-          img_src={"/website/assets/VGDOpanda.png"}
-        ></ArtPiece>
-        <ArtPiece
-          title='Elevator Going Down'
-          creator='Jamie - 1st Place Between Worlds Jam Winner'
-          img_src={"/website/assets/VGDOpanda.png"}
-        ></ArtPiece>
+        {artJamData.map((art, index) => (
+          <ArtPiece
+            key={index}
+            title={art.title}
+            creator={art.creator}
+            img_src={art.img_src}
+          />
+        ))}
       </div>
     </div>
   );
