@@ -12,8 +12,6 @@ const MusicArtist = ({ title, creator, soundcloud_links }) => {
           <iframe
             width="100%"
             height="300"
-            scrolling="no"
-            frameBorder="no"
             allow="autoplay"
             src={`${link}&color=%23b03626&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true`}
           />
