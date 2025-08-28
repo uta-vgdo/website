@@ -1,6 +1,11 @@
-import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import {
+  faGithub,
+  faInstagram,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import shoutoutnna from "../../public/assets/shoutoutnna.png";
+import shoutoutnna from "/assets/shoutoutnna.png";
+import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 
 const OfficerProfile = ({
   name = "Marcos Slater",
@@ -53,10 +58,31 @@ const OfficerProfile = ({
             </div>
           ))}
         </div>
-        <div className="text-white mt-5">
-          <FontAwesomeIcon icon={faInstagram} size="2xl"></FontAwesomeIcon>
-          <FontAwesomeIcon icon={faInstagram} size="2xl"></FontAwesomeIcon>
-          <FontAwesomeIcon icon={faInstagram} size="2xl"></FontAwesomeIcon>
+        <div className="text-white mt-5 flex justify-center">
+          <a
+            href="https://www.linkedin.com/nnannaejim"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-red-500"
+          >
+            <FontAwesomeIcon icon={faInstagram} size="2xl"></FontAwesomeIcon>
+          </a>
+          <a
+            href="https://www.linkedin.com/nnannaejim"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-red-500"
+          >
+            <FontAwesomeIcon icon={faInstagram} size="2xl"></FontAwesomeIcon>
+          </a>{" "}
+          <a
+            href="https://www.linkedin.com/nnannaejim"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-red-500"
+          >
+            <FontAwesomeIcon icon={faInstagram} size="2xl"></FontAwesomeIcon>
+          </a>
         </div>
       </div>
     </div>
