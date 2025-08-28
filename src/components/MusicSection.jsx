@@ -3,7 +3,7 @@ import MusicArtist from "./MusicArtist";
 const MusicSection = () => {
   return (
     <div id="music" className="scroll-mt-24 min-h-screen text-white py-5">
-      <div className="text-5xl pb-4 text-tertiary font-bold">
+      <div className="text-5xl pb-4 text-tertiary font-bold text-center">
         VGDO Soundtracks Showcase
       </div>
 

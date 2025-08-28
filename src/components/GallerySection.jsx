@@ -3,7 +3,7 @@ import artJamData from "../../constant/artJamData.json";
 
 const GallerySection = () => {
   return (
-    <div id="gallery" className="scroll-mt-24 min-h-screen  text-white py-5">
+    <div id="gallery" className="scroll-mt-24 min-h-screen  text-white py-5 pb-20 text-center">
       <div className=" text-5xl pb-4 text-tertiary font-bold">
         VGDO Art Gallery
       </div>

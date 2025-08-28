@@ -12,7 +12,7 @@ function App() {
     <>
       <Navbar />
 
-      <div className="overflow-x-hidden">
+      <div className="">
         <HeroSection />
         <AboutSection />
         <GameSection />

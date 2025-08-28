@@ -3,7 +3,7 @@ import GameTitle from "./GameTitle";
 
 const GameSection = () => {
   return (
-    <div id="games" className="scroll-mt-24 min-h-screen  text-white py-5">
+    <div id="games" className="scroll-mt-24 min-h-screen  text-white text-center py-5">
       {/* Heading */}
       <div className=" text-5xl pb-4 text-tertiary font-bold">
         VGDO Game Showcase

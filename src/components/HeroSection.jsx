@@ -2,7 +2,7 @@ import React from "react";
 
 const HeroSection = () => {
   return (
-    <section className="hero-section h-screen bg-[#161F28] flex flex-col justify-center items-center px-6 text-center">
+    <section id="hero" className="hero-section min-h-screen bg-[#161F28] flex flex-col justify-center items-center px-6 text-center">
       {/* Main Heading */}
       <h1 className="text-white text-5xl md:text-6xl font-bold mb-4">
         Video Game Developers Organization at UTA

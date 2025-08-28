@@ -1,8 +1,8 @@
 const AboutSection = () => {
   return (
-    <div id="about" className="scroll-mt-24 h-screen text-white px-6">
+    <div id="about" className="scroll-mt-24 min-h-screen text-white px-6">
       {/* Heading */}
-      <div className=" text-5xl pb-4 text-tertiary font-bold">About VGDO</div>
+      <div className=" text-5xl pb-4 text-tertiary font-bold text-center">About VGDO</div>
 
       {/* Subtitle */}
       <div className=" text-2xl mt-6 ">
