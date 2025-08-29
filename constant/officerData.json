@@ -1,0 +1,121 @@
+[
+  {
+    "name": "Marcos Slater",
+    "role": "President",
+    "picture": "/website/assets/shoutoutnna.png",
+    "skills": [
+      { "name": "Programming", "rating": 9 },
+      { "name": "Art & Animation", "rating": 7 },
+      { "name": "Audio Design", "rating": 8 },
+      { "name": "Game Design & Production", "rating": 8 }
+    ],
+    "socials": {
+      "linkedin": "https://linkedin.com/in/janedoe",
+      "github": "https://github.com/janedoe",
+      "instagram": "https://instagram.com/janedoe",
+      "itchio": "https:youtube.com"
+    }
+  },
+  {
+    "name": "Nnanna Ejim",
+    "role": "Vice President",
+    "picture": "/website/assets/shoutoutnna.png",
+    "skills": [
+      { "name": "Programming", "rating": 9 },
+      { "name": "Art & Animation", "rating": 7 },
+      { "name": "Audio Design", "rating": 8 },
+      { "name": "Game Design & Production", "rating": 8 }
+    ],
+    "socials": {
+      "linkedin": "https://linkedin.com/in/janedoe",
+      "github": "https://github.com/janedoe",
+      "instagram": "https://instagram.com/janedoe",
+      "website": "https://janedoe.com"
+    }
+  },
+  {
+    "name": "Jaden Harris",
+    "role": "Secretary",
+    "picture": "/website/assets/shoutoutnna.png",
+    "skills": [
+      { "name": "Programming", "rating": 9 },
+      { "name": "Art & Animation", "rating": 7 },
+      { "name": "Audio Design", "rating": 8 },
+      { "name": "Game Design & Production", "rating": 8 }
+    ],
+    "socials": {
+      "linkedin": "https://linkedin.com/in/janedoe",
+      "github": "https://github.com/janedoe",
+      "instagram": "https://instagram.com/janedoe",
+      "website": "https://janedoe.com"
+    }
+  },
+  {
+    "name": "Lauren Dodson",
+    "role": "Treasurer",
+    "picture": "/website/assets/shoutoutnna.png",
+    "skills": [
+      { "name": "Programming", "rating": 9 },
+      { "name": "Art & Animation", "rating": 7 },
+      { "name": "Audio Design", "rating": 8 },
+      { "name": "Game Design & Production", "rating": 8 }
+    ],
+    "socials": {
+      "linkedin": "https://linkedin.com/in/janedoe",
+      "github": "https://github.com/janedoe",
+      "instagram": "https://instagram.com/janedoe",
+      "website": "https://janedoe.com"
+    }
+  },
+  {
+    "name": "Jamie Pag-Ong",
+    "role": "Historian",
+    "picture": "/website/assets/shoutoutnna.png",
+    "skills": [
+      { "name": "Programming", "rating": 9 },
+      { "name": "Art & Animation", "rating": 7 },
+      { "name": "Audio Design", "rating": 8 },
+      { "name": "Game Design & Production", "rating": 8 }
+    ],
+    "socials": {
+      "linkedin": "https://linkedin.com/in/janedoe",
+      "github": "https://github.com/janedoe",
+      "instagram": "https://instagram.com/janedoe",
+      "website": "https://janedoe.com"
+    }
+  },
+  {
+    "name": "Roberto Lira",
+    "role": "Public Relations",
+    "picture": "/website/assets/shoutoutnna.png",
+    "skills": [
+      { "name": "Programming", "rating": 9 },
+      { "name": "Art & Animation", "rating": 7 },
+      { "name": "Audio Design", "rating": 8 },
+      { "name": "Game Design & Production", "rating": 8 }
+    ],
+    "socials": {
+      "linkedin": "https://linkedin.com/in/janedoe",
+      "github": "https://github.com/janedoe",
+      "instagram": "https://instagram.com/janedoe",
+      "website": "https://janedoe.com"
+    }
+  },
+  {
+    "name": "Kenny Nguyen",
+    "role": "Consultant & Web Developer",
+    "picture": "/website/assets/shoutoutnna.png",
+    "skills": [
+      { "name": "Programming", "rating": 9 },
+      { "name": "Art & Animation", "rating": 7 },
+      { "name": "Audio Design", "rating": 8 },
+      { "name": "Game Design & Production", "rating": 8 }
+    ],
+    "socials": {
+      "linkedin": "https://linkedin.com/in/janedoe",
+      "github": "https://github.com/janedoe",
+      "instagram": "https://instagram.com/janedoe",
+      "website": "https://janedoe.com"
+    }
+  }
+]
