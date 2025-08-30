@@ -21,7 +21,12 @@ const OfficerSection = () => {
             name={officer.name}
             picture={officer.picture}
             role={officer.role}
-            skills={officer.skills}
+            programming_rating={officer.programming_rating}
+            art_rating={officer.art_rating}
+            audio_rating={officer.audio_rating}
+            design_rating={officer.design_rating}
+            narrative_rating={officer.narrative_rating}
+            production_rating={officer.production_rating}
             socials={officer.socials}
           />
         ))}

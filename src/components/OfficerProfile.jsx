@@ -6,16 +6,64 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  Chart as ChartJS,
+  RadialLinearScale,
+  PointElement,
+  LineElement,
+  Filler,
+  Tooltip,
+  Legend,
+} from "chart.js";
+import { Radar } from "react-chartjs-2";
+
+ChartJS.register(
+  RadialLinearScale,
+  PointElement,
+  LineElement,
+  Filler,
+  Tooltip,
+  Legend
+);
+
+const options = {
+  plugins: {
+    legend: {
+      display: false, // 👈 hides the legend
+    },
+  },
+  scales: {
+    r: {
+      suggestedMin: 0, // start at 0
+      suggestedMax: 10, // max value
+      ticks: {
+        display: false,
+        stepSize: 1, // interval between circles
+      },
+      pointLabels: {
+        color: "white", // label color
+        font: {
+          size: 10, // label font size
+          weight: "bold",
+        },
+      },
+      grid: {
+        color: "rgba(255,255,255,0.2)", // optional: faint grid
+      },
+    },
+  },
+};
 
 const OfficerProfile = ({
   name = "Marcos Slater",
   role = "President",
   picture = "",
-  skills = [
-    { name: "Programming", rating: 8 },
-    { name: "Design", rating: 7 },
-    { name: "Leadership", rating: 9 },
-  ],
+  programming_rating = 5,
+  art_rating = 5,
+  audio_rating = 5,
+  design_rating = 5,
+  narrative_rating = 5,
+  production_rating = 5,
   socials = {}, // Example: { linkedin: "url", github: "url", instagram: "url", website: "url" }
 }) => {
   // Mapping social names to icons
@@ -25,6 +73,33 @@ const OfficerProfile = ({
     instagram: faInstagram,
     website: faGlobe,
     itchio: faItchIo,
+  };
+
+  const data = {
+    labels: [
+      "Programming",
+      "Art and Animation",
+      "Music and Sound",
+      "Game Design",
+      "World Building",
+      "Game Production",
+    ],
+    datasets: [
+      {
+        label: "Proficiency",
+        data: [
+          programming_rating,
+          art_rating,
+          audio_rating,
+          design_rating,
+          narrative_rating,
+          production_rating,
+        ],
+        backgroundColor: "rgba(255, 99, 132, 0.2)",
+        borderColor: "rgba(255, 99, 132, 1)",
+        borderWidth: 1,
+      },
+    ],
   };
 
   return (
@@ -41,33 +116,16 @@ const OfficerProfile = ({
           {name} <br /> {role}
         </div>
 
-        <p className="text-left my-2">
+        <p className="text-left">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum amet
           non.
         </p>
 
         {/* Skills */}
-        <div className="flex flex-col gap-4">
-          {skills.map((skill) => (
-            <div key={skill.name} className="flex items-center gap-2">
-              <div className="text-white text-sm w-24 text-left">
-                {skill.name}
-              </div>
-              <div className="flex-1 bg-gray-500 rounded-full h-4 relative">
-                <div
-                  className="bg-amber-300 h-4 rounded-full"
-                  style={{ width: `${(skill.rating / 10) * 100}%` }}
-                ></div>
-              </div>
-              <div className="text-white text-sm w-8 text-right">
-                {skill.rating}/10
-              </div>
-            </div>
-          ))}
-        </div>
+        <Radar data={data} options={options} className="-my-12" />
 
         {/* Social links */}
-        <div className="text-white mt-5 flex justify-center gap-4">
+        <div className="text-white flex justify-center gap-4">
           {Object.entries(socials).map(([key, url]) => {
             if (!url) return null; // skip if empty
             return (
