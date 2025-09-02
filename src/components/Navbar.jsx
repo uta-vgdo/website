@@ -31,7 +31,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 w-full flex items-center justify-between z-50 border-b-4 bg-[#161f28] border-[#B03626] px-4 h-16">
+    <nav className="fixed top-0 left-0 w-full flex items-center justify-between z-50 px-4 h-16">
       {/* Left: Logo */}
       <div className="flex items-center">
         <img
@@ -42,8 +42,8 @@ const Navbar = () => {
       </div>
 
       {/* Center: Desktop Menu */}
-      <div className="hidden lg:block absolute left-1/2 transform -translate-x-1/2">
-        <ul className="flex text-[#ffdebe]">
+      <div className="hidden lg:block absolute left-1/2 translate-x-70">
+        <ul className="flex text-[#505050] font-extrabold">
           <li
             className="mx-5 cursor-pointer text-xl"
             onClick={() => handleScroll("hero")}
@@ -82,15 +82,15 @@ const Navbar = () => {
 
       {/* Right: Hamburger (mobile only) */}
       <div className="lg:hidden">
-        <button className="text-[#ffdebe]" onClick={() => setIsOpen(!isOpen)}>
+        <button className="text-[#505050]" onClick={() => setIsOpen(!isOpen)}>
           <FontAwesomeIcon icon={isOpen ? faTimes : faBars} size="2xl" />
         </button>
       </div>
 
       {/* Mobile Dropdown */}
       {isOpen && (
-        <div className="absolute top-full left-0 w-full bg-[#161f28] border-b-4 border-[#B03626] lg:hidden">
-          <ul className="flex flex-col items-center text-[#ffdebe] py-4">
+        <div className="absolute top-full left-0 w-full lg:hidden">
+          <ul className="flex flex-col items-center text-[#505050] bg-[#F3E7DA] font-extrabold py-4">
             <li
               className="py-2 cursor-pointer hover:bg-[#11151a] w-full text-center"
               onClick={() => handleScroll("hero")}
