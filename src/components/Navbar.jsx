@@ -42,7 +42,7 @@ const Navbar = () => {
       </div>
 
       {/* Center: Desktop Menu */}
-      <div className="hidden lg:block absolute left-1/2 translate-x-70">
+      <div className="hidden lg:flex justify-right">
         <ul className="flex text-[#505050] font-extrabold">
           <li
             className="mx-5 cursor-pointer text-xl"

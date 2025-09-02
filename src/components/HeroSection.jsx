@@ -6,7 +6,7 @@ const HeroSection = () => {
       id="hero"
       className="hero-section relative min-h-screen flex flex-col justify-center px-6 text-center"
     >
-      <div className="relative lg:flex mt-20 lg:justify-center lg:items-center">
+      <div className="relative lg:flex lg:justify-center lg:items-center mt-15 lg:mt-0">
         <div>
           {/* Main Heading */}
           <h1 className="text-[#505050] text-5xl md:text-6xl font-bold mt-4 mb-4">
@@ -51,7 +51,7 @@ const HeroSection = () => {
         </div>
         <img
           src="/website/sketch_panda.png"
-          className="h-auto w-auto lg:ml-50"
+          className="h-auto w-96 lg:w-100 lg:ml-25"
         ></img>
       </div>
     </section>

@@ -81,7 +81,7 @@ const OfficerProfile = ({
       "Art and Animation",
       "Music and Sound",
       "Game Design",
-      "World Building",
+      "Narrativity",
       "Game Production",
     ],
     datasets: [
@@ -105,8 +105,11 @@ const OfficerProfile = ({
   return (
     <div className="flex flex-col items-center mt-10">
       {/* Blue top div */}
-      <div className="bg-blue-500 rounded-2xl w-64 h-64 border-white border-2 z-10 flex items-center justify-center text-white text-xl font-bold">
-        <img src={picture} className="rounded-2xl" />
+      <div className="bg-gray-800 rounded-xl w-72 h-72 border-white border-2 z-10 flex items-center justify-center text-white text-xl font-bold">
+        <img
+          src={picture}
+          className="w-60 h-60 -mt-4 rounded-2xl [clip-path:polygon(0_0,100%_0,100%_100%,45px_100%,0_calc(100%-45px))]"
+        />
       </div>
 
       {/* Gray card */}
