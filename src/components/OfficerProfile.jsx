@@ -58,6 +58,7 @@ const OfficerProfile = ({
   name = "Marcos Slater",
   role = "President",
   picture = "",
+  description = "",
   programming_rating = 5,
   art_rating = 5,
   audio_rating = 5,
@@ -119,10 +120,7 @@ const OfficerProfile = ({
           {name} <br /> {role}
         </div>
 
-        <p className="text-left">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum amet
-          non.
-        </p>
+        <p className="text-left text-white">{description}</p>
 
         {/* Skills */}
         <Radar data={data} options={options} className="-my-12" />

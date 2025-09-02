@@ -23,6 +23,7 @@ const OfficerSection = () => {
             key={index}
             name={officer.name}
             picture={officer.picture}
+            description={officer.description}
             role={officer.role}
             programming_rating={officer.programming_rating}
             art_rating={officer.art_rating}

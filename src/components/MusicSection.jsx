@@ -6,7 +6,7 @@ const MusicSection = () => {
       <img src="/website/div_wave.svg"></img>
 
       <div className="bg-[#F05644]/90">
-        <div className="text-5xl pb-4 text-tertiary font-bold text-center">
+        <div className="text-5xl pb-4 text-tertiary font-bold text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
           VGDO Soundtracks Showcase
         </div>
 

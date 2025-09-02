@@ -10,12 +10,12 @@ const AboutSection = () => {
         </div>
 
         {/* Subtitle */}
-        <div className=" text-2xl mt-6 ">
+        <div className=" text-2xl mt-6 mx-10 text-center">
           Guiding the Next Generation of Game Developers
         </div>
 
         {/* Description */}
-        <div className="text-left mt-6">
+        <div className="text-left mt-6 mx-10">
           We are dedicated to empowering aspiring game developers and designers
           by providing the knowledge and tools necessary to bring their creative
           visions to life.

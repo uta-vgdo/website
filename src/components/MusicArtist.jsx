@@ -1,7 +1,7 @@
 const MusicArtist = ({ title, creator, soundcloud_links }) => {
   return (
     <div className="text-center py-5">
-      <p className="text-primary text-center text-lg">
+      <p className="text-tertiary text-center text-lg">
         {title}
         <br></br>
         {creator}

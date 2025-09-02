@@ -21,7 +21,9 @@ const HeroSection = () => {
               className="hero-image w-64 md:w-96 mb-8 rounded-xl"
             />
             {/* Info Text */}
-            <p className="text-white text-xl md:text-2xl mb-8">Meetings: TBA</p>
+            <p className="text-[#505050] font-bold text-xl md:text-2xl mb-8">
+              Meetings: TBA
+            </p>
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
               {/* Outline Button */}
@@ -42,7 +44,7 @@ const HeroSection = () => {
                 href="https://discord.gg/k5cgBEStQj"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hero-button px-6 py-3 rounded-2xl font-semibold text-white bg-red-500 hover:bg-red-600"
+                className="hero-button px-6 py-3 rounded-2xl font-semibold text-white bg-primary hover:bg-red-600"
               >
                 Join Now!
               </a>
