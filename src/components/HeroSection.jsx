@@ -34,7 +34,7 @@ const HeroSection = () => {
                     .getElementById("about")
                     .scrollIntoView({ behavior: "smooth" })
                 }
-                className="hero-button px-6 py-3 rounded-2xl font-semibold text-white border-2 border-white hover:bg-white hover:text-[#161F28]"
+                className="hero-button px-20 py-3 rounded-2xl font-semibold bg-white hover:bg-gray-200"
               >
                 More Info
               </a>
@@ -44,7 +44,7 @@ const HeroSection = () => {
                 href="https://discord.gg/k5cgBEStQj"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hero-button px-6 py-3 rounded-2xl font-semibold text-white bg-primary hover:bg-red-600"
+                className="hero-button px-20 py-3 rounded-2xl font-semibold text-white bg-primary hover:bg-secondary"
               >
                 Join Now!
               </a>

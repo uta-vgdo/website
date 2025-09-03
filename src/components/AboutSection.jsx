@@ -1,6 +1,6 @@
 const AboutSection = () => {
   return (
-    <div id="about" className="scroll-mt-24 min-h-screen text-white relative">
+    <div id="about" className="-scroll-m-80 min-h-screen text-white relative">
       <img src="/website/div_wave.svg"></img>
 
       <div className="bg-[#F05644]/90">

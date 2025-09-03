@@ -45,34 +45,34 @@ const Navbar = () => {
       <div className="hidden lg:flex justify-right">
         <ul className="flex text-[#505050] font-extrabold">
           <li
-            className="mx-5 cursor-pointer text-xl"
+            className="mx-5 cursor-pointer text-xl hover:text-primary"
             onClick={() => handleScroll("hero")}
           >
             Home
           </li>
           <li
-            className="mx-5 cursor-pointer text-xl"
+            className="mx-5 cursor-pointer text-xl hover:text-primary"
             onClick={() => handleScroll("about")}
           >
             About
           </li>
-          <li className="mx-5 text-xl">
+          <li className="mx-5 text-xl hover:text-primary">
             <Link to="/officers">Officers</Link>
           </li>
           <li
-            className="mx-5 cursor-pointer text-xl"
+            className="mx-5 cursor-pointer text-xl hover:text-primary"
             onClick={() => handleScroll("games")}
           >
             Games
           </li>
           <li
-            className="mx-5 cursor-pointer text-xl"
+            className="mx-5 cursor-pointer text-xl hover:text-primary"
             onClick={() => handleScroll("music")}
           >
             Music
           </li>
           <li
-            className="mx-5 cursor-pointer text-xl"
+            className="mx-5 cursor-pointer text-xl hover:text-primary"
             onClick={() => handleScroll("gallery")}
           >
             Art
@@ -92,37 +92,37 @@ const Navbar = () => {
         <div className="absolute top-full left-0 w-full lg:hidden">
           <ul className="flex flex-col items-center text-[#505050] bg-[#F3E7DA] font-extrabold py-4">
             <li
-              className="py-2 cursor-pointer hover:bg-[#11151a] w-full text-center"
+              className="py-2 cursor-pointer hover:bg-primary w-full text-center"
               onClick={() => handleScroll("hero")}
             >
               Home
             </li>
             <li
-              className="py-2 cursor-pointer hover:bg-[#11151a] w-full text-center"
+              className="py-2 cursor-pointer hover:bg-primary w-full text-center"
               onClick={() => handleScroll("about")}
             >
               About
             </li>
             <li
-              className="py-2 hover:bg-[#11151a] w-full text-center"
+              className="py-2 hover:bg-primary w-full text-center"
               onClick={() => setIsOpen(false)}
             >
               <Link to="/officers">Officers</Link>
             </li>
             <li
-              className="py-2 cursor-pointer hover:bg-[#11151a] w-full text-center"
+              className="py-2 cursor-pointer hover:bg-primary w-full text-center"
               onClick={() => handleScroll("games")}
             >
               Games
             </li>
             <li
-              className="py-2 cursor-pointer hover:bg-[#11151a] w-full text-center"
+              className="py-2 cursor-pointer hover:bg-primary w-full text-center"
               onClick={() => handleScroll("music")}
             >
               Music
             </li>
             <li
-              className="py-2 cursor-pointer hover:bg-[#11151a] w-full text-center"
+              className="py-2 cursor-pointer hover:bg-primary w-full text-center"
               onClick={() => handleScroll("gallery")}
             >
               Art
