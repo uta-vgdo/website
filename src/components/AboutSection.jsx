@@ -1,7 +1,7 @@
 const AboutSection = () => {
   return (
     <div id="about" className="-scroll-m-80 min-h-screen text-white relative">
-      <img src="/website/div_wave.svg"></img>
+      <img src="/website/div_wave.svg" className="w-full"></img>
 
       <div className="bg-[#F05644]/90">
         {/* Heading */}
@@ -36,7 +36,7 @@ const AboutSection = () => {
         </div>
       </div>
 
-      <img src="/website/div_wave.svg" className="-scale-y-100"></img>
+      <img src="/website/div_wave.svg" className="-scale-y-100 w-full"></img>
     </div>
   );
 };

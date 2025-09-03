@@ -3,7 +3,7 @@ import MusicArtist from "./MusicArtist";
 const MusicSection = () => {
   return (
     <div id="music" className="-scroll-m-80 min-h-screen text-white py-5">
-      <img src="/website/div_wave.svg"></img>
+      <img src="/website/div_wave.svg" className="w-full"></img>
 
       <div className="bg-[#F05644]/90">
         <div className="text-5xl pb-4 text-tertiary font-bold text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
@@ -69,7 +69,7 @@ const MusicSection = () => {
         </div>
       </div>
 
-      <img src="/website/div_wave.svg" className="-scale-y-100"></img>
+      <img src="/website/div_wave.svg" className="-scale-y-100 w-full"></img>
     </div>
   );
 };
