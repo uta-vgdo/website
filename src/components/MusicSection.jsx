@@ -2,7 +2,7 @@ import MusicArtist from "./MusicArtist";
 
 const MusicSection = () => {
   return (
-    <div id="music" className="-scroll-m-80 min-h-screen text-white py-5">
+    <div id="music" className="lg:-scroll-m-80 min-h-screen text-white py-5">
       <img src="/website/div_wave.svg" className="w-full"></img>
 
       <div className="bg-[#F05644]/90">

@@ -82,7 +82,7 @@ const OfficerProfile = ({
       "Art and Animation",
       "Music and Sound",
       "Game Design",
-      "Narrativity",
+      "Storytelling",
       "Game Production",
     ],
     datasets: [
@@ -120,7 +120,7 @@ const OfficerProfile = ({
           {name} <br /> {role}
         </div>
 
-        <p className="text-left text-white">{description}</p>
+        <p className="text-center text-white">{description}</p>
 
         {/* Skills */}
         <Radar data={data} options={options} className="-my-12" />
