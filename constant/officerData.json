@@ -2,7 +2,7 @@
   {
     "name": "Marcos Slater",
     "role": "President",
-    "picture": "/website/assets/officer_headshots/marcos.png",
+    "picture": "/assets/officer_headshots/marcos.png",
     "description": "\"Life is a marathon not a sprint.\"",
     "programming_rating": 3,
     "art_rating": 3,
@@ -20,7 +20,7 @@
   {
     "name": "Nnanna Ejim",
     "role": "Vice President",
-    "picture": "/website/assets/officer_headshots/nna.png",
+    "picture": "/assets/officer_headshots/nna.png",
     "description": "\"Life is ball.\"",
     "programming_rating": 7,
     "art_rating": 5,
@@ -38,7 +38,7 @@
   {
     "name": "Jaden Harris",
     "role": "Secretary",
-    "picture": "/website/assets/officer_headshots/jaden.png",
+    "picture": "/assets/officer_headshots/jaden.png",
     "description": "\"Life is roblox.\"",
     "programming_rating": 3,
     "art_rating": 1,
@@ -56,7 +56,7 @@
   {
     "name": "Lauren Dodson",
     "role": "Treasurer",
-    "picture": "/website/assets/officer_headshots/lauren.png",
+    "picture": "/assets/officer_headshots/lauren.png",
     "programming_rating": 3,
     "art_rating": 5,
     "audio_rating": 1,
@@ -73,7 +73,7 @@
   {
     "name": "Jamie Pag-ong",
     "role": "Historian",
-    "picture": "/website/assets/officer_headshots/jamie.png",
+    "picture": "/assets/officer_headshots/jamie.png",
     "programming_rating": 1,
     "art_rating": 8,
     "audio_rating": 1,
@@ -90,7 +90,7 @@
   {
     "name": "Roberto Lira",
     "role": "Public Relations Officer",
-    "picture": "/website/assets/officer_headshots/macko.png",
+    "picture": "/assets/officer_headshots/macko.png",
     "description": "\"You gotta be there to hear it.\"",
     "programming_rating": 3,
     "art_rating": 5,
@@ -108,7 +108,7 @@
   {
     "name": "Kenny Nguyen",
     "role": "Consultant & Web Developer",
-    "picture": "/website/assets/officer_headshots/kenny.png",
+    "picture": "/assets/officer_headshots/kenny.png",
     "description": "\"Man, I love VGDO.\"",
     "programming_rating": 7,
     "art_rating": 2,

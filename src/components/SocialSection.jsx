@@ -21,7 +21,7 @@ const SocialSection = () => {
       </a>
       <a href='https://mavengage.com' target='_blank' rel='noopener noreferrer'>
         <img
-          src={"/website/assets/MavEngage.png"}
+          src={"/assets/MavEngage.png"}
           alt='MavEngage Logo'
           className='h-8 w-8'
         />

@@ -25,9 +25,9 @@ function App() {
     <>
       <Navbar />
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/officers" element={<OfficerSection />} />
-        <Route path="*" element={<Navigate to="/" replace />} />
+        <Route path='/' element={<HomePage />} />
+        <Route path='/officers' element={<OfficerSection />} />
+        <Route path='*' element={<Navigate to='/' replace />} />
       </Routes>
       <Footer />
     </>

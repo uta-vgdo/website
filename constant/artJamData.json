@@ -2,36 +2,36 @@
   {
     "title": "Elevator Going Down",
     "creator": "Jamie - 1st Place Between Worlds Jam Winner",
-    "img_src": "/website/assets/ElevatorGoingDown.png"
+    "img_src": "/assets/ElevatorGoingDown.png"
   },
   {
     "title": "Railroads and Pills",
     "creator": "Thanh - 2nd Place Between Worlds Jam",
-    "img_src": "/website/assets/RailroadsAndPills.png"
+    "img_src": "/assets/RailroadsAndPills.png"
   },
   {
     "title": "Between Dimensions",
     "creator": "Hadi - 3rd Place Between Worlds Jam",
-    "img_src": "/website/assets/BetweenDimensions.jpg"
+    "img_src": "/assets/BetweenDimensions.jpg"
   },
   {
     "title": "Time and Emotion",
     "creator": "Trinity",
-    "img_src": "/website/assets/TimeAndEmotion.png"
+    "img_src": "/assets/TimeAndEmotion.png"
   },
   {
     "title": "Worlds Between",
     "creator": "Christopher",
-    "img_src": "/website/assets/WorldsBetween.png"
+    "img_src": "/assets/WorldsBetween.png"
   },
   {
     "title": "Entry",
     "creator": "Rayshaun",
-    "img_src": "/website/assets/entry.jpg"
+    "img_src": "/assets/entry.jpg"
   },
   {
     "title": "Life Changing",
     "creator": "Vincent",
-    "img_src": "/website/assets/LifeChanging.png"
+    "img_src": "/assets/LifeChanging.png"
   }
 ]
