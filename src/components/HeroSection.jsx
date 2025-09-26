@@ -3,48 +3,48 @@ import React from "react";
 const HeroSection = () => {
   return (
     <section
-      id="hero"
-      className="hero-section relative min-h-screen flex flex-col justify-center px-6 text-center"
+      id='hero'
+      className='hero-section relative min-h-screen flex flex-col justify-center px-6 text-center'
     >
-      <div className="relative lg:flex lg:justify-center lg:items-center mt-15 lg:mt-0">
+      <div className='relative lg:flex lg:justify-center lg:items-center mt-15 lg:mt-0'>
         <div>
           {/* Main Heading */}
-          <h1 className="text-[#505050] text-5xl md:text-6xl font-bold mt-4 mb-4">
+          <h1 className='text-[#505050] text-5xl md:text-6xl font-bold mt-4 mb-4'>
             Welcome to the Video Game <br></br>Developers Organization at UTA
           </h1>
 
-          <div className="flex flex-col items-center">
+          <div className='flex flex-col items-center'>
             {/* Hero Image */}
             <img
-              src="/website/assets/VGDOpanda.png"
-              alt="VGDO Panda Logo"
-              className="hero-image w-64 md:w-96 mb-8 rounded-xl"
+              src='/website/assets/VGDOpanda.png'
+              alt='VGDO Panda Logo'
+              className='hero-image w-64 md:w-96 mb-8 rounded-xl'
             />
             {/* Info Text */}
-            <p className="text-[#505050] font-bold text-xl md:text-2xl mb-8">
-              Meetings: TBA
+            <p className='text-[#505050] font-bold text-xl md:text-2xl mb-8'>
+              Meetings: Fridays 12 PM - 1 PM <p>ERB 131</p>
             </p>
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
+            <div className='flex flex-col sm:flex-row gap-4 sm:gap-6'>
               {/* Outline Button */}
               <a
-                href="#more-info"
+                href='#more-info'
                 onClick={() =>
                   document
                     .getElementById("about")
                     .scrollIntoView({ behavior: "smooth" })
                 }
-                className="hero-button px-20 py-3 rounded-2xl font-semibold bg-white hover:bg-gray-200"
+                className='hero-button px-20 py-3 rounded-2xl font-semibold bg-white hover:bg-gray-200'
               >
                 More Info
               </a>
 
               {/* Solid Button */}
               <a
-                href="https://discord.gg/k5cgBEStQj"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hero-button px-20 py-3 rounded-2xl font-semibold text-white bg-primary hover:bg-secondary"
+                href='https://discord.gg/k5cgBEStQj'
+                target='_blank'
+                rel='noopener noreferrer'
+                className='hero-button px-20 py-3 rounded-2xl font-semibold text-white bg-primary hover:bg-secondary'
               >
                 Join Now!
               </a>
@@ -52,8 +52,8 @@ const HeroSection = () => {
           </div>
         </div>
         <img
-          src="/website/sketch_panda.png"
-          className="h-auto w-96 lg:w-100 lg:ml-25"
+          src='/website/sketch_panda.png'
+          className='h-auto w-96 lg:w-100 lg:ml-25'
         ></img>
       </div>
     </section>

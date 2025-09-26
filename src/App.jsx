@@ -7,11 +7,13 @@ import HeroSection from "./components/HeroSection";
 import MusicSection from "./components/MusicSection";
 import OfficerSection from "./components/OfficerSection";
 import Navbar from "./components/Navbar";
+import EventsSection from "./components/EventsSection";
 
 function HomePage() {
   return (
     <>
       <HeroSection />
+      {/* <EventsSection /> */}
       <AboutSection />
       <GameSection />
       <MusicSection />
