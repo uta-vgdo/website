@@ -22,7 +22,7 @@ const HeroSection = () => {
             />
             {/* Info Text */}
             <p className='text-[#505050] font-bold text-xl md:text-2xl mb-8'>
-              Meetings: Fridays 12 PM - 1 PM <p>ERB 131</p>
+              Meetings: Fridays 12 PM - 2 PM <p>ERB 131</p>
             </p>
             {/* CTA Buttons */}
             <div className='flex flex-col sm:flex-row gap-4 sm:gap-6'>
