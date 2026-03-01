@@ -74,7 +74,7 @@ const Footer = () => {
               vgdo.uta@gmail.com
             </a>
             <br></br>
-            @Copyright 2025 | Made by Video Game Developers Organization
+            @Copyright 2026 | Made by Video Game Developers Organization
             Officers at UTA
           </p>
         </div>

@@ -54,42 +54,8 @@
     }
   },
   {
-    "name": "Lauren Dodson",
-    "role": "Treasurer",
-    "picture": "/website/assets/officer_headshots/lauren.png",
-    "programming_rating": 3,
-    "art_rating": 5,
-    "audio_rating": 1,
-    "design_rating": 1,
-    "narrative_rating": 6,
-    "production_rating": 1,
-    "socials": {
-      "linkedin": "",
-      "github": "",
-      "instagram": "",
-      "itchio": ""
-    }
-  },
-  {
-    "name": "Jamie Pag-ong",
-    "role": "Historian",
-    "picture": "/website/assets/officer_headshots/jamie.png",
-    "programming_rating": 1,
-    "art_rating": 8,
-    "audio_rating": 1,
-    "design_rating": 4,
-    "narrative_rating": 4,
-    "production_rating": 5,
-    "socials": {
-      "linkedin": "",
-      "github": "",
-      "instagram": "",
-      "itchio": ""
-    }
-  },
-  {
     "name": "Roberto Lira",
-    "role": "Public Relations Officer",
+    "role": "Treasurer",
     "picture": "/website/assets/officer_headshots/macko.png",
     "description": "\"You gotta be there to hear it.\"",
     "programming_rating": 3,
@@ -98,24 +64,6 @@
     "design_rating": 3,
     "narrative_rating": 2,
     "production_rating": 5,
-    "socials": {
-      "linkedin": "",
-      "github": "",
-      "instagram": "",
-      "itchio": ""
-    }
-  },
-  {
-    "name": "Kenny Nguyen",
-    "role": "Consultant & Web Developer",
-    "picture": "/website/assets/officer_headshots/kenny.png",
-    "description": "\"Man, I love VGDO.\"",
-    "programming_rating": 7,
-    "art_rating": 2,
-    "audio_rating": 7,
-    "design_rating": 5,
-    "narrative_rating": 2,
-    "production_rating": 9,
     "socials": {
       "linkedin": "",
       "github": "",
