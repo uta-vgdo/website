@@ -25,26 +25,27 @@ const HeroSection = () => {
               Meetings: Fridays 12 PM - 2 PM <p>TH 115</p>
             </p>
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
-              {/* Outline Button */}
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 ">
+              {/* Outline Button - Refined with Border and Shadow */}
               <a
                 href="#more-info"
-                onClick={() =>
+                onClick={(e) => {
+                  e.preventDefault();
                   document
                     .getElementById("about")
-                    .scrollIntoView({ behavior: "smooth" })
-                }
-                className="hero-button px-20 py-3 rounded-2xl font-semibold bg-white hover:bg-gray-200"
+                    .scrollIntoView({ behavior: "smooth" });
+                }}
+                className="hero-button px-12 py-3 rounded-xl font-bold text-[#505050] border-2 border-gray-300 bg-white shadow-sm transition-all duration-200 hover:bg-gray-50 hover:border-gray-400 hover:shadow-md active:scale-95 text-center"
               >
                 More Info
               </a>
 
-              {/* Solid Button */}
+              {/* Solid Button - The Primary Action */}
               <a
                 href="https://discord.gg/k5cgBEStQj"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hero-button px-20 py-3 rounded-2xl font-semibold text-white bg-primary hover:bg-secondary"
+                className="hero-button px-12 py-3 rounded-xl font-bold text-white bg-primary shadow-lg shadow-primary/30 transition-all duration-200 hover:bg-secondary hover:-translate-y-1 hover:shadow-xl active:scale-95 text-center"
               >
                 Join Now!
               </a>
