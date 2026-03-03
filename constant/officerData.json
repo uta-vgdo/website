@@ -36,6 +36,24 @@
     }
   },
   {
+    "name": "Roberto Lira",
+    "role": "Treasurer",
+    "picture": "/website/assets/officer_headshots/macko.png",
+    "description": "\"You gotta be there to hear it.\"",
+    "programming_rating": 3,
+    "art_rating": 5,
+    "audio_rating": 1,
+    "design_rating": 3,
+    "narrative_rating": 2,
+    "production_rating": 5,
+    "socials": {
+      "linkedin": "",
+      "github": "",
+      "instagram": "",
+      "itchio": ""
+    }
+  },
+  {
     "name": "Jaden Harris",
     "role": "Secretary",
     "picture": "/website/assets/officer_headshots/jaden.png",
@@ -53,21 +71,35 @@
       "itchio": ""
     }
   },
+
   {
-    "name": "Roberto Lira",
-    "role": "Treasurer",
-    "picture": "/website/assets/officer_headshots/macko.png",
-    "description": "\"You gotta be there to hear it.\"",
-    "programming_rating": 3,
-    "art_rating": 5,
-    "audio_rating": 1,
-    "design_rating": 3,
+    "name": "Gray Pham",
+    "role": "Public Relations Officer",
+    "picture": "/website/assets/officer_headshots/blank.jpg",
+    "description": "Meow",
+    "programming_rating": 4,
+    "art_rating": 8,
+    "audio_rating": 3,
+    "design_rating": 6,
     "narrative_rating": 2,
-    "production_rating": 5,
+    "production_rating": 3,
+    "socials": {}
+  },
+  {
+    "name": "Britney Do",
+    "role": "Historian",
+    "picture": "/website/assets/officer_headshots/blank.jpg",
+    "description": "When it’s dark, look for the stars",
+    "programming_rating": 2,
+    "art_rating": 4,
+    "audio_rating": 6,
+    "design_rating": 4,
+    "narrative_rating": 5,
+    "production_rating": 4,
     "socials": {
       "linkedin": "",
       "github": "",
-      "instagram": "",
+      "instagram": "brimagical",
       "itchio": ""
     }
   }
