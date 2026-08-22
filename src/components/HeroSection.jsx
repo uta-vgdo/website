@@ -1,4 +1,5 @@
 import React from "react";
+import FadeIn from "./FadeIn";
 
 const HeroSection = () => {
   return (
@@ -52,10 +53,12 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
-        <img
-          src="/website/sketch_panda.png"
-          className="h-auto w-96 lg:w-100 lg:ml-25"
-        ></img>
+        <FadeIn>
+          <img
+            src="/website/sketch_panda.png"
+            className="h-auto w-96 lg:w-100 lg:ml-25"
+          ></img>
+        </FadeIn>
       </div>
     </section>
   );

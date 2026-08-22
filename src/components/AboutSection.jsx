@@ -18,7 +18,7 @@ const AboutSection = () => {
         </div>
 
         {/* Description */}
-        <div className="text-left mt-6 mx-10">
+        <div className="text-left mt-6 mx-10 lg:text-center">
           We are dedicated to empowering aspiring game developers and designers
           by providing the knowledge and tools necessary to bring their creative
           visions to life.
