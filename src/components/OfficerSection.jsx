@@ -12,12 +12,12 @@ const OfficerSection = () => {
   return (
     <div ref={containerRef} className="min-h-screen pb-12">
       <p className="text-primary text-5xl text-center pt-24 font-bold">
-        2025-2026 Officer Board!
+        2026-2027 Officer Board!
       </p>
       <p className="text-primary text-5xl text-center mt-5 font-bold">
         Executive Board
       </p>
-      <div className="flex flex-wrap justify-center gap-24 gap-y-4 mx-24">
+      <div className="flex flex-wrap justify-center gap-20 gap-y-0 mx-10">
         {officersData.map((officer, index) => (
           <OfficerProfile
             key={index}
