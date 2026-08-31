@@ -24,7 +24,7 @@ const Footer = () => {
               >
                 <FontAwesomeIcon
                   icon={faInstagram}
-                  size="2xl"
+                  size="3x"
                   className="hover:text-primary"
                 ></FontAwesomeIcon>
               </a>
@@ -37,7 +37,7 @@ const Footer = () => {
               >
                 <FontAwesomeIcon
                   icon={faYoutube}
-                  size="2xl"
+                  size="3x"
                   className="hover:text-primary"
                 ></FontAwesomeIcon>
               </a>
@@ -50,7 +50,7 @@ const Footer = () => {
               >
                 <FontAwesomeIcon
                   icon={faGithub}
-                  size="2xl"
+                  size="3x"
                   className="hover:text-primary"
                 ></FontAwesomeIcon>
               </a>
@@ -63,17 +63,18 @@ const Footer = () => {
               >
                 <FontAwesomeIcon
                   icon={faDiscord}
-                  size="2xl"
+                  size="3x"
                   className="hover:text-primary"
                 ></FontAwesomeIcon>
               </a>
             </li>
           </ul>
-          <p className="text-center mt-2">
+          <p className="text-center mt-2 text-3xl">
             <a href="mailto:vgdo.uta@gmail.com" className="hover:text-primary">
               vgdo.uta@gmail.com
             </a>
-            <br></br>
+          </p>
+          <p className="text-center mt-4 text-3xl">
             @Copyright 2026 | Made by Video Game Developers Organization
             Officers at UTA
           </p>

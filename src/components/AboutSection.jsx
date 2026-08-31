@@ -8,17 +8,17 @@ const AboutSection = () => {
 
       <div className="bg-[#F05644]/90">
         {/* Heading */}
-        <div className=" text-5xl pb-4 text-tertiary font-bold text-center">
+        <div className=" text-8xl pb-4 text-tertiary font-bold text-center">
           About VGDO
         </div>
 
         {/* Subtitle */}
-        <div className=" text-2xl mt-6 mx-10 text-center">
+        <div className=" text-5xl mt-6 mx-10 text-center">
           Guiding the Next Generation of Game Developers
         </div>
 
         {/* Description */}
-        <div className="text-left mt-6 mx-10 lg:text-center">
+        <div className="text-3xl mt-6 mx-10 lg:text-center">
           We are dedicated to empowering aspiring game developers and designers
           by providing the knowledge and tools necessary to bring their creative
           visions to life.
